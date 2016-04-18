@@ -1,0 +1,56 @@
+<div class="large-12 large-centered" id = "main">
+	<div class="search large-8 large-centered">
+		<input ng-model ="query" placeholder = "Search.." class = "searchcontent" id="searchTextField">
+	</div>
+	<div class = "large-centered large-10 filteroptions"> 
+		<div class="large-3 text-center columns">
+		    <div class = "large-12 text-center">Time :
+		    	<input ng-model ="attraction.tym" type = "text large-1" placeholder = "in minutes">
+		    </div>
+		</div>
+
+		<div class="large-3 text-center columns">
+		    <div class = "large-12 text-center">Cost :
+		    	<input ng-model ="attraction.price" type = "text large-1" placeholder = "in $">
+		    </div>
+		</div>
+
+		<div class="large-3 text-center columns">
+		    <div class = "large-12 text-center">Distance :
+		    	<input ng-model ="attraction.distance" type = "text large-1" placeholder = "in miles">
+		    </div>
+		</div>
+
+		<div class="large-3 text-center columns">
+		    <div class = "large-12 text-center">Rating:
+				<select class = "large-4" ng-model ="attraction.rating">
+					<option value="0">--</option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+				</select>		
+		    </div>
+		</div>
+	</div>
+
+	<div class = "large-12 lager-centered setFilter">
+		<center><a href="#/main" class="button large-centered text-center" ng-click= "SendFilterData()">Set</a></center>
+	</div>
+
+	<div class="large-8 large-centered total">
+		<!-- {% for item in data%} -->
+		<div ng-repeat="item in locations | filter:query" class="large-12 location">
+			<div class="large-12 large-centered locationcontent">
+				<h3><b>{{item.LocationName}} </b> ({{item.Rating}}/5) <a href = "#/update/{{locations.indexOf(item)}}" ng-click= "SendUpdateID(item.PostID)" class="fa fa-pencil"> </a> &nbsp &nbsp<a class="fa fa-times" ng-click= "SendDeleteData(item.PostID)"> </a></h3>
+				<h5><b>User Name:</b> {{item.UserName}}</h5> 
+				<h6><b>Description:</b> {{item.Description}}</h6> 
+				<h6><b>Price:</b> ${{item.Price}}</h6>
+				<h6><b>Time:</b> {{item.Time}} mins</h6>
+				<h7 class="fa fa-thumbs-o-up">{{item.UpVotes}} </h7>
+				<h7 class="fa fa-thumbs-o-down">{{item.DownVotes}} </h7>
+			</div>
+		</div>
+	</div>
+</div>

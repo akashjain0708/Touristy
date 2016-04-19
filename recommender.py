@@ -38,6 +38,8 @@ def new_click_recommendation(location):
     print(str(location_table))
     item_position = location_table.index((location[0], location[1]))
     print("Hey")
+    print("Item position:" +item_position)
+    print("Hey")
     label_for_item = labels[item_position]
     print("Hey")
     # Get indices of all elements in the cluster

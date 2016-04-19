@@ -20,7 +20,7 @@ def insert_recommend_location(tag_list, location):
 
 def new_click_recommendation(location):
     # Get table in dataset format
-    print("Printing lat/long: "+ str(location[0], str(location[1])))
+    print("Printing lat/long: "+ str(location[0]), str(location[1]))
     [location_table, recommend_table] = get_tag_columns()
     # Get labels for all elements
     print("Recommend table:" +str(recommend_table))

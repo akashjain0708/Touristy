@@ -2,22 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="13462c01-1851-4913-847d-860e7d849230" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/touristy_database2.db" afterPath="$PROJECT_DIR$/touristy_database2.db" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/User.py" afterPath="$PROJECT_DIR$/User.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.py" afterPath="$PROJECT_DIR$/app.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database_interaction.py" afterPath="$PROJECT_DIR$/database_interaction.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/recommender.py" afterPath="$PROJECT_DIR$/recommender.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/css/styles.css" afterPath="$PROJECT_DIR$/static/css/styles.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/js/app.js" afterPath="$PROJECT_DIR$/static/js/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/js/controllers.js" afterPath="$PROJECT_DIR$/static/js/controllers.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/partials/details.html" afterPath="$PROJECT_DIR$/static/partials/details.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/partials/list.html" afterPath="$PROJECT_DIR$/static/partials/list.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/partials/login.html" afterPath="$PROJECT_DIR$/static/partials/login.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/partials/main.html" afterPath="$PROJECT_DIR$/static/partials/main.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/partials/signup.html" afterPath="$PROJECT_DIR$/static/partials/signup.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/partials/update.html" afterPath="$PROJECT_DIR$/static/partials/update.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/index.html" afterPath="$PROJECT_DIR$/templates/index.html" />
     </list>
     <ignored path="Touristy.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -45,13 +30,26 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="controllers.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="controllers.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/static/js/controllers.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.597254">
-              <caret line="377" column="47" selection-start-line="377" selection-start-column="47" selection-end-line="377" selection-end-column="47" />
+            <state vertical-scroll-proportion="-8.472222">
+              <caret line="413" column="4" selection-start-line="413" selection-start-column="4" selection-end-line="413" selection-end-column="4" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.7209302">
+              <caret line="338" column="21" selection-start-line="338" selection-start-column="21" selection-end-line="338" selection-end-column="21" />
+              <folding>
+                <element signature="e#0#11#0" expanded="true" />
+                <marker date="1461048762863" expanded="true" signature="9332:9374" placeholder="SELECT userI... User" />
               </folding>
             </state>
           </provider>
@@ -84,7 +82,6 @@
         <option value="$PROJECT_DIR$/templates/index.html" />
         <option value="$PROJECT_DIR$/recommender.py" />
         <option value="$PROJECT_DIR$/database_interaction.py" />
-        <option value="$PROJECT_DIR$/app.py" />
         <option value="$PROJECT_DIR$/static/partials/details.html" />
         <option value="$PROJECT_DIR$/static/partials/hm.html" />
         <option value="$PROJECT_DIR$/static/partials/list.html" />
@@ -92,6 +89,7 @@
         <option value="$PROJECT_DIR$/static/partials/mypost.html" />
         <option value="$PROJECT_DIR$/static/partials/update.html" />
         <option value="$PROJECT_DIR$/static/js/controllers.js" />
+        <option value="$PROJECT_DIR$/app.py" />
       </list>
     </option>
   </component>
@@ -574,7 +572,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1618" height="868" extended-state="6" />
+    <frame x="-9" y="-9" width="1618" height="868" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16494179" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -669,7 +667,7 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
-            <marker date="1461046522523" expanded="true" signature="9332:9374" placeholder="SELECT userI... User" />
+            <marker date="1461048762863" expanded="true" signature="9332:9374" placeholder="SELECT userI... User" />
           </folding>
         </state>
       </provider>
@@ -807,7 +805,7 @@
           <caret line="116" column="21" selection-start-line="116" selection-start-column="21" selection-end-line="116" selection-end-column="21" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
-            <marker date="1461046522523" expanded="true" signature="9332:9374" placeholder="SELECT userI... User" />
+            <marker date="1461048762863" expanded="true" signature="9332:9374" placeholder="SELECT userI... User" />
           </folding>
         </state>
       </provider>
@@ -916,7 +914,7 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
-            <marker date="1461046522523" expanded="true" signature="9332:9374" placeholder="SELECT userI... User" />
+            <marker date="1461048762863" expanded="true" signature="9332:9374" placeholder="SELECT userI... User" />
           </folding>
         </state>
       </provider>
@@ -1140,17 +1138,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.638889">
-          <caret line="30" column="16" selection-start-line="30" selection-start-column="16" selection-end-line="30" selection-end-column="16" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-            <marker date="1461046522523" expanded="true" signature="9332:9374" placeholder="SELECT userI... User" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/partials/details.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.9701493">
@@ -1225,10 +1212,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/static/js/controllers.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.597254">
-          <caret line="377" column="47" selection-start-line="377" selection-start-column="47" selection-end-line="377" selection-end-column="47" />
+        <state vertical-scroll-proportion="-8.472222">
+          <caret line="413" column="4" selection-start-line="413" selection-start-column="4" selection-end-line="413" selection-end-column="4" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7209302">
+          <caret line="338" column="21" selection-start-line="338" selection-start-column="21" selection-end-line="338" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+            <marker date="1461048762863" expanded="true" signature="9332:9374" placeholder="SELECT userI... User" />
           </folding>
         </state>
       </provider>

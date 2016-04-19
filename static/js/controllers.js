@@ -137,6 +137,8 @@ mc.controller('lc', ['$scope', '$http', '$location', function($scope, $http, $lo
         var location = autocomplete.getPlace().geometry.location;
         var latitude = location.lat();
         var longitude = location.lng();
+        lat = latitude;
+        long = longitude;
         var name = autocomplete.getPlace().name;
         var tags = autocomplete.getPlace().types;
         var data = {

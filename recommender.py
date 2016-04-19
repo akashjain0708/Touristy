@@ -36,6 +36,7 @@ def new_click_recommendation(location):
     # Get label for current element
     print("Hey")
     print(str(location_table))
+    print(str(location_table[len(location_table)-1]))
     item_position = location_table.index((location[0], location[1]))
     print("Hey")
     print("Item position:" +item_position)

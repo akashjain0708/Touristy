@@ -122,7 +122,7 @@ def search_place():
     insert_recommend_location(tag_list, (latitude, longitude))
     # Gets list of recommended locations with location data
     print("Printing LatLon: ")
-    print(str(latitude), str(longitude))
+    print(type(latitude), type(longitude))
     recommend_location_list = new_click_recommendation((latitude, longitude))
     # Create posts for recommendation
     print("Getting posts for locations")

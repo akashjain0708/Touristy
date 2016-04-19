@@ -14,8 +14,8 @@
 			<a href="#/details" class="button">Create Post</a>
 		</center>
 	</div>
-	<div class="large-7 center total columns">
-		<div ng-repeat="item in locations | filter:query" class="large-12 location">
+	<div class="large-7 large-centered total">
+		<div ng-repeat="item in locations | filter:query" class="large-12 large-centered location">
 			<div class="large-12 large-centered locationcontent">
 				<h3><b>{{item.LocationName}} </b> ({{item.Rating}}/5) <a href = "#/update/{{locations.indexOf(item)}}" ng-click= "SendUpdateID(item.PostID)" class="fa fa-pencil"> </a> &nbsp &nbsp<a class="fa fa-times" ng-click= "SendDeleteData(item.PostID)"> </a></h3>
 				<h5><b>User Name:</b> {{item.UserName}}</h5> 

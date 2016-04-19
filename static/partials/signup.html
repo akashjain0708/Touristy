@@ -10,11 +10,14 @@
 		<input ng-model ="user.fullname" placeholder = "Full Name" class = "searchcontent">
 
 		<label>Password</label>
-		<input ng-model ="user.password" placeholder = "Password" class = "searchcontent">
+		<input type="password" ng-model ="user.password" placeholder = "Password" class = "searchcontent">
 
 		<label>Phone Number</label>
 		<input ng-model ="user.number" placeholder = "Phone Number (optional)" class = "searchcontent">
 
-		<center><a href="#/list" class="small button" ng-click="SendSignUpData()">Sign Up</a></center>
+		<center>
+			<a class="small button" ng-click="SendSignUpData()">Sign Up</a> <br>
+			or <a href = "#/login" class="l"> Login </a>
+		</center>
 	</div>
 </div>

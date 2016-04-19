@@ -1,0 +1,30 @@
+<div class="large-12 sg">
+	<div class="large-3 columns">
+		Welcome {{userName}}!
+		&nbsp &nbsp <a href="#/mypost" class="button">My Posts</a>
+	</div>
+	<div class="large-8 columns">
+		<a href="#/home" ng-click="SignOut()"> <i class="fa fa-sign-out" aria-hidden="true"> Sign Out </i> </a>
+	</div>
+</div>
+
+<div class="large-12 large-centered" id = "mypost">
+	<div class="large-12 large-centered">
+		<center>
+			<a href="#/details" class="button">Create Post</a>
+		</center>
+	</div>
+	<div class="large-7 center total columns">
+		<div ng-repeat="item in locations | filter:query" class="large-12 location">
+			<div class="large-12 large-centered locationcontent">
+				<h3><b>{{item.LocationName}} </b> ({{item.Rating}}/5) <a href = "#/update/{{locations.indexOf(item)}}" ng-click= "SendUpdateID(item.PostID)" class="fa fa-pencil"> </a> &nbsp &nbsp<a class="fa fa-times" ng-click= "SendDeleteData(item.PostID)"> </a></h3>
+				<h5><b>User Name:</b> {{item.UserName}}</h5> 
+				<h6><b>Description:</b> {{item.Description}}</h6> 
+				<h6><b>Price:</b> {{item.Price}}</h6> 
+				<h6><b>Time:</b> {{item.Time}}</h6>
+				<h7 class="fa fa-thumbs-o-up">{{item.UpVotes}} </h7>
+				<h7 class="fa fa-thumbs-o-down">{{item.DownVotes}} </h7>
+			</div>
+		</div>
+	</div>
+</div>

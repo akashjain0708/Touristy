@@ -4,8 +4,11 @@
 		<input ng-model ="user.username" placeholder = "Username" class = "searchcontent">
 
 		<label>Password</label>
-		<input ng-model ="user.password" placeholder = "Password" class = "searchcontent">
+		<input type="password" ng-model ="user.password" placeholder = "Password" class = "searchcontent">
 
-		<center><a href="#/list" class="small button" ng-click="SendLoginData()">Login</a></center>
+		<center>
+			<a class="small button" ng-click="SendLoginData()">Login</a> <br>
+			or <a href="#/signup" class="s"> Sign Up </a>
+		</center>
 	</div>
 </div>

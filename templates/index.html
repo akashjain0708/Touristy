@@ -16,31 +16,13 @@
     <script src="{{ url_for('static' , filename= "js/script.js")}}"></script>
     <script src="{{ url_for('static' , filename= "js/controllers.js")}}"></script>
     <script src="{{ url_for('static' , filename= "js/ngAutocomplete.js")}}"></script>
-
-{#    <script src="./js/app.js"></script>#}
-{#    <script src="./js/controllers.js"></script>#}
-{#    <script src="./js/script.js"></script>#}
-{#    <script src="./js/ngAutocomplete.js"></script>#}
 </head>
 
 <body ng-app="mp3">
 
     <!-- <div ng-view></div> -->
 
-    <div class="large-6 large-centered heading text-center"> <a href = "#/list"> TOURISTY </a> </div>
-
-    <div class="large-6 sg text-center large-centered">
-        <div class="large-6 columns text-center">
-            <a href = "#/login">
-                Login
-            </a>
-        </div>
-        <div class="large-6 columns text-center">
-            <a href="#/signup">
-                Sign Up
-            </a>
-        </div>
-    </div>
+    <div class="large-6 large-centered heading text-center"> <a href = "#/home"> TOURISTY </a> </div>
 
     <div ng-view></div>
 
@@ -50,9 +32,11 @@
     <script src="{{ url_for('static' , filename= "foundation6_lib/js/foundation.min.js")}}"></script>
     <script src="{{ url_for('static' , filename= "js/script.js")}}"></script>
     <script>
-        $(document).foundation();
+    $(document).foundation();
     </script>
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAHYlhYzNEsbSVbORiZ2p6qMlYncqbvxGo&libraries=places"></script>
+    <script type="text/javascript"
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAHYlhYzNEsbSVbORiZ2p6qMlYncqbvxGo&libraries=visualization,places">
+    </script>
 {#    <script src="http://localhost:35729/livereload.js"></script>#}
 </body>
 </html>

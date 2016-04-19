@@ -1,3 +1,13 @@
+<div class="large-12 sg">
+    <div class="large-3 columns">
+        Welcome {{userName}}!
+        &nbsp &nbsp <a href="#/mypost" class="button">My Posts</a>
+    </div>
+    <div class="large-8 columns">
+        <a href="#/home" ng-click="SignOut()"> <i class="fa fa-sign-out" aria-hidden="true"> Sign Out </i> </a>
+    </div>
+</div>
+
 <div class="large-10 large-centered" id="details">
     <div class="large-12">
         <div class="large-12 description columns">
@@ -29,7 +39,7 @@
                 </select>   
             </div>
 
-            <center><a href="" class="button" ng-click="SendDetailData()">Submit</a></center>
+            <center><a class="button" ng-click="SendDetailData()">Submit</a></center>
         </div>
     </div>
 </div>

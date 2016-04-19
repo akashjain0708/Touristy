@@ -10,6 +10,9 @@ import os
 import sqlite3
 from User import *
 from geopy.distance import vincenty
+
+from app import login_manager
+
 file_name = os.path.join(os.path.dirname(__file__), 'touristy_database2.db')
 
 
@@ -85,6 +88,11 @@ def add_post(postID, upvotes, downvotes, description, userid):
     try:
         connection = sqlite3.connect(file_name, isolation_level=None, timeout=11)
         cur = connection.cursor()
+        print(type(postID))
+        print(type(upvotes))
+        print(type(downvotes))
+        print(type(description))
+        print(type(userid))
         print("Connected to database")
         cur.execute("INSERT INTO Posts (postID, Upvotes, Downvotes, Description, UserID) VALUES (?, ?, ?, ?, ?)",
                     (postID, upvotes, downvotes, description, userid))
@@ -128,18 +136,15 @@ def edit_post(json_object, pid):
 
 def remove_post(pid):
     try:
-        print('hey')
         connection = sqlite3.connect(file_name, isolation_level=None, timeout=11)
-        print('hey')
         cur = connection.cursor()
-        print('hey')
         cur.execute("DELETE FROM Attractions WHERE postID=?", (pid,))
-        print('hey')
         cur.execute("DELETE FROM Posts WHERE postID=?", (pid,))
-        print('hey')
         connection.close()
+        return ["OK", "Success"]
     except sqlite3.Error as err:
         print("Error:" + err.args[0])
+        return ["Error", err.args[0]]
 
 
 def get_user_posts(user_id):
@@ -147,7 +152,7 @@ def get_user_posts(user_id):
         connection = sqlite3.connect(file_name, isolation_level=None, timeout=11)
         cur = connection.cursor()
         cur.execute(
-            "SELECT p.Upvotes, p.Downvotes, p.Description, p.userID, a.Name, a.Time, a.Cost, a.Rating, p.postID FROM User u INNER JOIN Posts p ON u.UserID = p.userID INNER JOIN Attractions a ON p.postID = a.postID WHERE u.UserID = ?",
+            "SELECT p.Upvotes, p.Downvotes, p.Description, p.userID, a.Name, a.Time, a.Cost, a.Rating, p.postID FROM User u INNER JOIN Posts p ON u.userID = p.userID INNER JOIN Attractions a ON p.postID = a.postID WHERE u.userID = ?",
             (user_id,))
         result_list = cur.fetchall()
         connection.close()
@@ -157,13 +162,19 @@ def get_user_posts(user_id):
     return []
 
 
-def add_user(userid, name, email, phone_no, no_of_posts):
-    connection = sqlite3.connect(file_name, isolation_level=None, timeout=11)
-    cur = connection.cursor()
-    cur.execute("INSERT INTO Users (UserID, Name, Email, Phone_No, No_Of_Posts) VALUES (?, ?, ?, ?, ?, ?, ?, ?)",
-                (userid, name, email, phone_no, no_of_posts))
-    print('hey')
-    connection.close()
+def add_user(userid, name, email, phone_no, password, no_of_posts):
+    try:
+        connection = sqlite3.connect(file_name, isolation_level=None, timeout=11)
+        cur = connection.cursor()
+        print('Inserting!')
+        cur.execute("INSERT INTO User (userID, Name, Email, phonenum, Password, numposts) VALUES (?, ?, ?, ?, ?, ?)",
+                    (userid, name, email, phone_no, password, no_of_posts))
+        print('Inserted!')
+        connection.close()
+    except sqlite3.Error as err:
+        print("Error:" + err.args[0])
+        return ["Error", err.args[0]]
+    return ["OK", "Successful", userid]
 
 
 def remove_user(uid):
@@ -181,16 +192,17 @@ def login_user_database(user_id, password_user):
         cur.execute(
             "SELECT Password FROM User WHERE userID=?",
             (user_id,))
-        print('Hey')
-        password_database = cur.fetchone()
+        print("Query executed!")
+        password_database = cur.fetchone()[0]
+        print('Database password:' + password_database)
         if password_database is None:
             result = ["Error", "User not found!"]
         else:
             is_valid_password = User.validate_login(password_database, password_user)
             if is_valid_password:
-                result = ["OK", "Success"]
+                result = ["OK", "Success", user_id]
             else:
-                result = ["Error", "Inccorect password"]
+                result = ["Error", "Incorrect password"]
         connection.close()
 
         return result
@@ -227,7 +239,7 @@ def select_lat_long_rating(latitude, longitude, rating):
         cur = connection.cursor()
         # cur.execute("SELECT * FROM Attractions WHERE Latitude=? AND Longitude=?", (latitude, longitude))
         cur.execute(
-            "SELECT p.Upvotes, p.Downvotes, p.Description, p.userID, a.Name, a.time, a.cost, a.rating, p.postID FROM Posts p INNER JOIN Attractions a ON p.postID=a.postID WHERE a.Latitude=? AND a.longitude=? AND a.rating<=? ORDER BY a.rating DESC",
+            "SELECT p.Upvotes, p.Downvotes, p.Description, p.userID, a.Name, a.time, a.cost, a.rating, p.postID FROM Posts p INNER JOIN Attractions a ON p.postID=a.postID WHERE a.Latitude=? AND a.longitude=? AND a.rating>=? ORDER BY a.rating DESC",
             (latitude, longitude, rating))
         result_list = cur.fetchall()
         connection.close()
@@ -259,7 +271,7 @@ def select_lat_long_cost_rating(latitude, longitude, cost, rating):
         cur = connection.cursor()
         # cur.execute("SELECT * FROM Attractions WHERE Latitude=? AND Longitude=?", (latitude, longitude))
         cur.execute(
-            "SELECT p.Upvotes, p.Downvotes, p.Description, p.userID, a.Name, a.time, a.cost, a.rating, p.postID FROM Posts p INNER JOIN Attractions a ON p.postID=a.postID WHERE a.Latitude=? AND a.longitude=? AND a.cost<=? AND a.rating<=? ORDER BY a.rating DESC",
+            "SELECT p.Upvotes, p.Downvotes, p.Description, p.userID, a.Name, a.time, a.cost, a.rating, p.postID FROM Posts p INNER JOIN Attractions a ON p.postID=a.postID WHERE a.Latitude=? AND a.longitude=? AND a.cost<=? AND a.rating>=? ORDER BY a.rating DESC",
             (latitude, longitude, cost, rating))
         result_list = cur.fetchall()
         connection.close()
@@ -291,7 +303,7 @@ def select_lat_long_time_rating(latitude, longitude, time, rating):
         cur = connection.cursor()
         # cur.execute("SELECT * FROM Attractions WHERE Latitude=? AND Longitude=?", (latitude, longitude))
         cur.execute(
-            "SELECT p.Upvotes, p.Downvotes, p.Description, p.userID, a.Name, a.time, a.cost, a.rating, p.postID FROM Posts p INNER JOIN Attractions a ON p.postID=a.postID WHERE a.Latitude=? AND a.longitude=? AND a.time<=? AND a.rating<=?  ORDER BY a.rating DESC",
+            "SELECT p.Upvotes, p.Downvotes, p.Description, p.userID, a.Name, a.time, a.cost, a.rating, p.postID FROM Posts p INNER JOIN Attractions a ON p.postID=a.postID WHERE a.Latitude=? AND a.longitude=? AND a.time<=? AND a.rating>=?  ORDER BY a.rating DESC",
             (latitude, longitude, time, rating))
         result_list = cur.fetchall()
         connection.close()
@@ -323,7 +335,7 @@ def select_lat_long_time_cost_rating(latitude, longitude, time, cost, rating):
         cur = connection.cursor()
         # cur.execute("SELECT * FROM Attractions WHERE Latitude=? AND Longitude=?", (latitude, longitude))
         cur.execute(
-            "SELECT p.Upvotes, p.Downvotes, p.Description, p.userID, a.Name, a.time, a.cost, a.rating, p.postID FROM Posts p INNER JOIN Attractions a ON p.postID=a.postID WHERE a.Latitude=? AND a.longitude=? AND a.time<=? AND a.cost<=? AND a.rating<= ? ORDER BY a.rating DESC",
+            "SELECT p.Upvotes, p.Downvotes, p.Description, p.userID, a.Name, a.time, a.cost, a.rating, p.postID FROM Posts p INNER JOIN Attractions a ON p.postID=a.postID WHERE a.Latitude=? AND a.longitude=? AND a.time<=? AND a.cost<=? AND a.rating>= ? ORDER BY a.rating DESC",
             (latitude, longitude, time, cost, rating))
         result_list = cur.fetchall()
         connection.close()
@@ -334,7 +346,7 @@ def select_lat_long_time_cost_rating(latitude, longitude, time, cost, rating):
 
 
 def heatmap(latitude, longitude):
-    connection = sqlite3.connect('touristy_database.db', isolation_level=None, timeout=11)
+    connection = sqlite3.connect(file_name, isolation_level=None, timeout=11)
     cur = connection.cursor()
     cur.execute("SELECT * FROM Attractions")
     rows = cur.fetchall()
@@ -387,7 +399,7 @@ def heatmap(latitude, longitude):
     lat1 = min_row1[1]
     long1 = min_row1[2]
     cur.execute(
-        "SELECT * FROM Post p INNER JOIN Attractions a ON p.postID=a.postID WHERE Latitude='{}' AND Longitude='{}'".format(
+        "SELECT * FROM Posts p INNER JOIN Attractions a ON p.postID=a.postID WHERE Latitude='{}' AND Longitude='{}'".format(
             lat1, long1))
     rows1 = cur.fetchall()
     len1 = len(rows1)
@@ -395,7 +407,7 @@ def heatmap(latitude, longitude):
     lat2 = min_row2[1]
     long2 = min_row2[2]
     cur.execute(
-        "SELECT * FROM Post p INNER JOIN Attractions a ON p.postID=a.postID WHERE Latitude='{}' AND Longitude='{}'".format(
+        "SELECT * FROM Posts p INNER JOIN Attractions a ON p.postID=a.postID WHERE Latitude='{}' AND Longitude='{}'".format(
             lat2, long2))
     rows2 = cur.fetchall()
     len2 = len(rows2)
@@ -403,7 +415,7 @@ def heatmap(latitude, longitude):
     lat3 = min_row3[1]
     long3 = min_row3[2]
     cur.execute(
-        "SELECT * FROM Post p INNER JOIN Attractions a ON p.postID=a.postID WHERE Latitude='{}' AND Longitude='{}'".format(
+        "SELECT * FROM Posts p INNER JOIN Attractions a ON p.postID=a.postID WHERE Latitude='{}' AND Longitude='{}'".format(
             lat3, long3))
     rows3 = cur.fetchall()
     len3 = len(rows3)
@@ -411,7 +423,7 @@ def heatmap(latitude, longitude):
     lat4 = min_row4[1]
     long4 = min_row4[2]
     cur.execute(
-        "SELECT * FROM Post p INNER JOIN Attractions a ON p.postID=a.postID WHERE Latitude='{}' AND Longitude='{}'".format(
+        "SELECT * FROM Posts p INNER JOIN Attractions a ON p.postID=a.postID WHERE Latitude='{}' AND Longitude='{}'".format(
             lat4, long4))
     rows4 = cur.fetchall()
     len4 = len(rows4)
@@ -425,7 +437,7 @@ def heatmap(latitude, longitude):
 
 
 def check_all_tags(latitude, longitude, tags_arr):
-    connection = sqlite3.connect('touristy_database.db', isolation_level=None, timeout=11)
+    connection = sqlite3.connect(file_name, isolation_level=None, timeout=11)
     cur = connection.cursor()
 
     cur.execute("PRAGMA table_info(Tags)")
@@ -433,18 +445,25 @@ def check_all_tags(latitude, longitude, tags_arr):
     arr = cur.fetchall()
     list = [i[1] for i in arr]
 
-    cur.execute("INSERT INTO Tags (Latitude, Longitude) VALUES ('{}', '{}')".format(latitude, longitude))
+    cur.execute("SELECT * From Tags WHERE Latitude = '{}' AND Longitude = '{}'".format(latitude, longitude))
+    latlongarr = cur.fetchall()
+
+    if (len(latlongarr) == 0):
+        cur.execute("INSERT INTO Tags (Latitude, Longitude) VALUES ('{}', '{}')".format(latitude, longitude))
 
     for tag in tags_arr:
         if tag not in list:
-            cur.execute("ALTER TABLE Tags ADD COLUMN '{}' char(30) NOT NULL DEFAULT(0)".format(tag))
+            cur.execute("ALTER TABLE Tags ADD COLUMN '{}' INTEGER DEFAULT(0)".format(tag))
             cur.execute(
                 "UPDATE Tags SET '{}' = 1 WHERE Latitude = '{}' AND Longitude = '{}'".format(tag, latitude, longitude))
             list.append(tag)
+        if tag in list:
+            cur.execute(
+                "UPDATE Tags SET '{}' = 1 WHERE Latitude = '{}' AND Longitude = '{}'".format(tag, latitude, longitude))
 
 
 def get_tag_columns():
-    connection = sqlite3.connect('touristy_database.db', isolation_level=None, timeout=11)
+    connection = sqlite3.connect(file_name, isolation_level=None, timeout=11)
     cur = connection.cursor()
 
     cur.execute("SELECT * FROM Tags")
@@ -460,7 +479,7 @@ def get_tag_columns():
         tuple2 = entry[2:]
         others.append(tuple2)
 
-    return [tuple1, tuple2]
+    return [latlong, others]
 
 
 if __name__ == '__main__':

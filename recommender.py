@@ -6,6 +6,7 @@ from database_interaction import *
 
 def return_cluster_labels(dataset, clusters):
     # dataset = [(1, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1), (0, 1, 0, 0), (1, 1, 0, 1), (0, 1, 1, 0)]
+    print("Dataset:" +str(dataset))
     kmeans = KMeans(n_clusters=clusters)
     kmeans.fit(dataset)
     return kmeans.labels_
@@ -18,9 +19,18 @@ def insert_recommend_location(tag_list, location):
 
 def new_click_recommendation(location):
     # Get table in dataset format
-    [recommend_table, location_table] = get_tag_columns()
+    [location_table, recommend_table] = get_tag_columns()
     # Get labels for all elements
-    labels = return_cluster_labels(recommend_table, 12)
+    print("Recommend table:" +str(recommend_table))
+    print("Length of table:" +str(len(recommend_table)))
+    print("Length of columns:" +str(len(recommend_table[0])))
+    if len(recommend_table) < len(recommend_table[0]):
+        clusters = len(recommend_table)
+    elif len(recommend_table[0]) < 10:
+        clusters = len(recommend_table[0])
+    else:
+        clusters = len(recommend_table[0]) - 2
+    labels = return_cluster_labels(recommend_table, clusters)
     # Get label for current element
     item_position = location_table.index((location[0], location[1]))
     label_for_item = labels[item_position]
@@ -28,5 +38,6 @@ def new_click_recommendation(location):
     indices = [i for i, x in enumerate(labels) if x == label_for_item]
     recommended_attractions = []
     for index in indices:
-        recommended_attractions.append(location_table[index])
+        if location_table[index][0] != location[0] and location_table[index][1] != location[1]:
+            recommended_attractions.append(location_table[index])
     return recommended_attractions

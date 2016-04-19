@@ -50,4 +50,5 @@ class User:
         :param password: Password entered by the user
         :return: True or False
         """
+        print(password_hash, password)
         return check_password_hash(password_hash, password)

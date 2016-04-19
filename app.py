@@ -71,6 +71,7 @@ def create_user_by_id():
 
 def get_posts_for_locations(recommend_location_list):
     recommend_list = []
+    print("Making recommend list")
     # For every location, take the top most post, and create a list
     for location in recommend_location_list:
         posts = select_lat_long(location[0], location[1])
@@ -88,6 +89,7 @@ def get_posts_for_locations(recommend_location_list):
                      "PostID": recommended_post[8]
                      }
         recommend_list.append(item_json)
+    print("Sending list")
     return recommend_list
 
 
@@ -121,6 +123,7 @@ def search_place():
     # Gets list of recommended locations with location data
     recommend_location_list = new_click_recommendation((latitude, longitude))
     # Create posts for recommendation
+    print("Getting posts for locations")
     recommend_list = get_posts_for_locations(recommend_location_list)
     print("Display list: " +json.dumps(display_list))
     print("Recommendation list: " +json.dumps(recommend_list))

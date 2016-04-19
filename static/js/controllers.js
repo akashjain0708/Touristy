@@ -290,32 +290,6 @@ mc.controller('mainc', ['$scope', '$http', '$routeParams', '$location', function
                 $scope.locations = data;
             })
             .error(function (data, status, header, config) {
-                $scope.locations = [{
-                    "UserName": "pmittal3",
-                    "LocationName": "The Chicago Bean",
-                    "Latitude": "15",
-                    "Longitude": "10",
-                    "Description": "Awesome",
-                    "Rating": "5",
-                    "UpVotes": "142",
-                    "DownVotes": "20",
-                    "Price": "30",
-                    "Time": "20",
-                    "PostID": "tt0111161"
-                },
-                    {
-                        "UserName": "ssridhr3",
-                        "LocationName": "The Chicago Bean",
-                        "Latitude": "23",
-                        "Longitude": "10",
-                        "Description": "bad",
-                        "Rating": "4",
-                        "UpVotes": "100",
-                        "DownVotes": "20",
-                        "Price": "100",
-                        "Time": "10",
-                        "PostID": "tt0068646"
-                    }];
             });
     };
 

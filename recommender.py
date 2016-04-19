@@ -9,6 +9,7 @@ def return_cluster_labels(dataset, clusters):
     print("Dataset:" +str(dataset))
     kmeans = KMeans(n_clusters=clusters)
     kmeans.fit(dataset)
+    print("Returning KMeans")
     return kmeans.labels_
 
 
@@ -37,7 +38,9 @@ def new_click_recommendation(location):
     # Get indices of all elements in the cluster
     indices = [i for i, x in enumerate(labels) if x == label_for_item]
     recommended_attractions = []
+    print("Doing index calculations")
     for index in indices:
         if location_table[index][0] != location[0] and location_table[index][1] != location[1]:
             recommended_attractions.append(location_table[index])
+        print("Returning index calculations")
     return recommended_attractions

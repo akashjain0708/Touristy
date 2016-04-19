@@ -20,6 +20,7 @@ def insert_recommend_location(tag_list, location):
 
 def new_click_recommendation(location):
     # Get table in dataset format
+    print("Printing lat/long: "+ str(location[0], str(location[1])))
     [location_table, recommend_table] = get_tag_columns()
     # Get labels for all elements
     print("Recommend table:" +str(recommend_table))
@@ -33,6 +34,7 @@ def new_click_recommendation(location):
         clusters = len(recommend_table[0]) - 2
     labels = return_cluster_labels(recommend_table, clusters)
     # Get label for current element
+    print("")
     item_position = location_table.index((location[0], location[1]))
     label_for_item = labels[item_position]
     # Get indices of all elements in the cluster

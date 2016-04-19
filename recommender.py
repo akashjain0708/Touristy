@@ -42,7 +42,7 @@ def new_click_recommendation(location):
     # print("Type:" + type(location_table[len(location_table) - 1]))
     item_position = location_table.index((location[0], location[1]))
     print("Hey")
-    print("Item position:" + item_position)
+    print("Item position:" + str(item_position))
     print("Hey")
     label_for_item = labels[item_position]
     print("Hey")

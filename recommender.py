@@ -34,11 +34,14 @@ def new_click_recommendation(location):
         clusters = len(recommend_table[0]) - 2
     labels = return_cluster_labels(recommend_table, clusters)
     # Get label for current element
-    print("")
+    print("Hey")
     item_position = location_table.index((location[0], location[1]))
+    print("Hey")
     label_for_item = labels[item_position]
+    print("Hey")
     # Get indices of all elements in the cluster
     indices = [i for i, x in enumerate(labels) if x == label_for_item]
+    print("Hey")
     recommended_attractions = []
     print("Doing index calculations")
     for index in indices:

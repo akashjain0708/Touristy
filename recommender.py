@@ -1,12 +1,14 @@
 from sklearn.cluster import KMeans
 from database_interaction import *
+
+
 # Column -  0: Restaurants, 1: Food, 2: Museum, 3: Central Park Zoo
 # Row - 0: Chicago Bean, Wildberry pancakes
 
 
 def return_cluster_labels(dataset, clusters):
     # dataset = [(1, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1), (0, 1, 0, 0), (1, 1, 0, 1), (0, 1, 1, 0)]
-    print("Dataset:" +str(dataset))
+    print("Dataset:" + str(dataset))
     kmeans = KMeans(n_clusters=clusters)
     kmeans.fit(dataset)
     print("Returning KMeans")
@@ -20,12 +22,13 @@ def insert_recommend_location(tag_list, location):
 
 def new_click_recommendation(location):
     # Get table in dataset format
-    print("Printing lat/long: "+ str(location[0]), str(location[1]))
+    print("Printing lat/long: " + str(location[0]), str(location[1]))
+    print("Type: " + type(location[0]))
     [location_table, recommend_table] = get_tag_columns()
     # Get labels for all elements
-    print("Recommend table:" +str(recommend_table))
-    print("Length of table:" +str(len(recommend_table)))
-    print("Length of columns:" +str(len(recommend_table[0])))
+    print("Recommend table:" + str(recommend_table))
+    print("Length of table:" + str(len(recommend_table)))
+    print("Length of columns:" + str(len(recommend_table[0])))
     if len(recommend_table) < len(recommend_table[0]):
         clusters = len(recommend_table)
     elif len(recommend_table[0]) < 10:
@@ -36,10 +39,11 @@ def new_click_recommendation(location):
     # Get label for current element
     print("Hey")
     print(str(location_table))
-    print(str(location_table[len(location_table)-1]))
+    print(str(location_table[len(location_table) - 1]))
+    print("Type:" + type(location_table[len(location_table) - 1]))
     item_position = location_table.index((location[0], location[1]))
     print("Hey")
-    print("Item position:" +item_position)
+    print("Item position:" + item_position)
     print("Hey")
     label_for_item = labels[item_position]
     print("Hey")

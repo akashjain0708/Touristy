@@ -340,96 +340,116 @@ def select_lat_long_time_cost_rating(latitude, longitude, time, cost, rating):
         print("Error:" + err.args[0])
     return []
 
+# def heatmap(latitude, longitude):
 
-def heatmap(latitude, longitude):
+
+def heatmap():
     connection = sqlite3.connect(file_name, isolation_level=None, timeout=11)
     cur = connection.cursor()
     cur.execute("SELECT * FROM Attractions")
     rows = cur.fetchall()
-    point_location = (latitude, longitude)
-    min_dist1 = 10000000
-    min_dist2 = 1000000000
-    min_dist3 = 10000000000
-    min_dist4 = 1000000000000
-
-    min_row1 = None
-    min_row2 = None
-    min_row3 = None
-    min_row4 = None
-
+    data = []
     for row in rows:
-        dest_location = (row[1], row[2])
-        dist = float(vincenty(point_location, dest_location).miles)
-        # print(str(dist) + " " + str(row[0]))
-
-        if min_dist1 > dist:
-            min_dist4 = min_dist3
-            min_row4 = min_row3
-            min_dist3 = min_dist2
-            min_row3 = min_row2
-            min_dist2 = min_dist1
-            min_row2 = min_row1
-            min_dist1 = dist
-            min_row1 = row
-
-        if min_dist2 > dist and dist != min_dist1:
-            min_dist4 = min_dist3
-            min_row4 = min_row3
-            min_dist3 = min_dist2
-            min_row3 = min_row2
-            min_dist2 = dist
-            min_row2 = row
-
-        if min_dist3 > dist and dist != min_dist1 and dist != min_dist2:
-            min_dist4 = min_dist3
-            min_row4 = min_row3
-            min_dist3 = dist
-            min_row3 = row
-
-        if min_dist4 > dist and dist != min_dist1 and dist != min_dist2 and dist != min_dist3:
-            min_dist4 = dist
-            min_row4 = row
-
-    # print("\n" + str(min_row3[1]))
-
-    lat1 = min_row1[1]
-    long1 = min_row1[2]
-    cur.execute(
-        "SELECT * FROM Posts p INNER JOIN Attractions a ON p.postID=a.postID WHERE Latitude='{}' AND Longitude='{}'".format(
-            lat1, long1))
-    rows1 = cur.fetchall()
-    len1 = len(rows1)
-
-    lat2 = min_row2[1]
-    long2 = min_row2[2]
-    cur.execute(
-        "SELECT * FROM Posts p INNER JOIN Attractions a ON p.postID=a.postID WHERE Latitude='{}' AND Longitude='{}'".format(
-            lat2, long2))
-    rows2 = cur.fetchall()
-    len2 = len(rows2)
-
-    lat3 = min_row3[1]
-    long3 = min_row3[2]
-    cur.execute(
-        "SELECT * FROM Posts p INNER JOIN Attractions a ON p.postID=a.postID WHERE Latitude='{}' AND Longitude='{}'".format(
-            lat3, long3))
-    rows3 = cur.fetchall()
-    len3 = len(rows3)
-
-    lat4 = min_row4[1]
-    long4 = min_row4[2]
-    cur.execute(
-        "SELECT * FROM Posts p INNER JOIN Attractions a ON p.postID=a.postID WHERE Latitude='{}' AND Longitude='{}'".format(
-            lat4, long4))
-    rows4 = cur.fetchall()
-    len4 = len(rows4)
-
-    # print(len4)
-
-    data = [(lat1, long1, len1), (lat2, long2, len2), (lat3, long3, len3), (lat4, long4, len4)]
-    # for tuple in data:
-    # print(tuple)
+        cur.execute(
+            "SELECT * FROM Post p INNER JOIN Attractions a ON p.postID=a.postID WHERE Latitude='{}' AND Longitude='{}'".format(
+                row[1], row[2]))
+        posts = cur.fetchall()
+        lenposts = len(posts)
+        sample_entry = (row[1], row[2], lenposts)
+        if (sample_entry not in data):
+            data.append((row[1], row[2], lenposts))
+    for entry in data:
+        print(entry)
     return data
+    #
+    # connection = sqlite3.connect(file_name, isolation_level=None, timeout=11)
+    # cur = connection.cursor()
+    # cur.execute("SELECT * FROM Attractions")
+    # rows = cur.fetchall()
+    # point_location = (latitude, longitude)
+    # min_dist1 = 10000000
+    # min_dist2 = 1000000000
+    # min_dist3 = 10000000000
+    # min_dist4 = 1000000000000
+    #
+    # min_row1 = None
+    # min_row2 = None
+    # min_row3 = None
+    # min_row4 = None
+    #
+    # for row in rows:
+    #     dest_location = (row[1], row[2])
+    #     dist = float(vincenty(point_location, dest_location).miles)
+    #     # print(str(dist) + " " + str(row[0]))
+    #
+    #     if min_dist1 > dist:
+    #         min_dist4 = min_dist3
+    #         min_row4 = min_row3
+    #         min_dist3 = min_dist2
+    #         min_row3 = min_row2
+    #         min_dist2 = min_dist1
+    #         min_row2 = min_row1
+    #         min_dist1 = dist
+    #         min_row1 = row
+    #
+    #     if min_dist2 > dist and dist != min_dist1:
+    #         min_dist4 = min_dist3
+    #         min_row4 = min_row3
+    #         min_dist3 = min_dist2
+    #         min_row3 = min_row2
+    #         min_dist2 = dist
+    #         min_row2 = row
+    #
+    #     if min_dist3 > dist and dist != min_dist1 and dist != min_dist2:
+    #         min_dist4 = min_dist3
+    #         min_row4 = min_row3
+    #         min_dist3 = dist
+    #         min_row3 = row
+    #
+    #     if min_dist4 > dist and dist != min_dist1 and dist != min_dist2 and dist != min_dist3:
+    #         min_dist4 = dist
+    #         min_row4 = row
+    #
+    # # print("\n" + str(min_row3[1]))
+    #
+    # lat1 = min_row1[1]
+    # long1 = min_row1[2]
+    # cur.execute(
+    #     "SELECT * FROM Posts p INNER JOIN Attractions a ON p.postID=a.postID WHERE Latitude='{}' AND Longitude='{}'".format(
+    #         lat1, long1))
+    # rows1 = cur.fetchall()
+    # len1 = len(rows1)
+    #
+    # lat2 = min_row2[1]
+    # long2 = min_row2[2]
+    # cur.execute(
+    #     "SELECT * FROM Posts p INNER JOIN Attractions a ON p.postID=a.postID WHERE Latitude='{}' AND Longitude='{}'".format(
+    #         lat2, long2))
+    # rows2 = cur.fetchall()
+    # len2 = len(rows2)
+    #
+    # lat3 = min_row3[1]
+    # long3 = min_row3[2]
+    # cur.execute(
+    #     "SELECT * FROM Posts p INNER JOIN Attractions a ON p.postID=a.postID WHERE Latitude='{}' AND Longitude='{}'".format(
+    #         lat3, long3))
+    # rows3 = cur.fetchall()
+    # len3 = len(rows3)
+    #
+    # lat4 = min_row4[1]
+    # long4 = min_row4[2]
+    # cur.execute(
+    #     "SELECT * FROM Posts p INNER JOIN Attractions a ON p.postID=a.postID WHERE Latitude='{}' AND Longitude='{}'".format(
+    #         lat4, long4))
+    # rows4 = cur.fetchall()
+    # len4 = len(rows4)
+    #
+    # # print(len4)
+    #
+    # data = [(lat1, long1, len1), (lat2, long2, len2), (lat3, long3, len3), (lat4, long4, len4)]
+    # # for tuple in data:
+    # # print(tuple)
+    # return data
 
 
 def check_all_tags(latitude, longitude, tags_arr):

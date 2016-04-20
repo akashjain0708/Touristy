@@ -279,8 +279,8 @@ mc.controller('mainc', ['$scope', '$http', '$routeParams', '$location', function
     $scope.SendFilterData = function(){
         var data = {
             LocationName : name,
-            Latitude : latitude,
-            Longitude : longitude,
+            Latitude : lat,
+            Longitude : long,
             Time : $scope.attraction.tym,
             Price : $scope.attraction.price,
             Distance : $scope.attraction.distance,

@@ -330,6 +330,21 @@ def edit_post_by_id():
     return json.dumps("Success")
 
 
+@app.route('/updateVote', methods=['POST'])
+def update_vote_for_post():
+    update_json = request.get_json()
+    post_id = update_json["PostID"]
+    upvotes = int(update_json["UpVotes"])
+    downvotes = int(update_json["DownVotes"])
+    update_obj = {
+        'PostID' : post_id,
+        'Upvotes' : upvotes,
+        'Downvotes' : downvotes,
+    }
+    edit_post(update_obj, post_id)
+    return json.dumps("Success")
+
+
 @app.route("/logoutUser")
 @login_required
 def logout():

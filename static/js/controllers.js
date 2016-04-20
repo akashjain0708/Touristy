@@ -56,7 +56,7 @@ mc.controller('loginc', ['$scope', '$http', '$location', function($scope, $http,
                 }
                 else{
                     /*
-                    TODO: ERROR!
+                     TODO: ERROR!
                      */
                 }
             })
@@ -136,7 +136,7 @@ mc.controller('lc', ['$scope', '$http', '$location', function($scope, $http, $lo
     //userName = "Priya" ;//Have to remove this
     //$scope.userName = userName;
     $scope.userName = localStorage.getItem("UID");
-        if($scope.userName != null) {
+    if($scope.userName != null) {
         $scope.if_loggedIn = true;
     }
 
@@ -177,7 +177,7 @@ mc.controller('mainc', ['$scope', '$http', '$routeParams', '$location', function
 
     var input = document.getElementById('searchTextField');
     var options = {
-        
+
     };
     autocomplete = new google.maps.places.Autocomplete(input, options);
     autocomplete.addListener('place_changed', getPlaceData);
@@ -185,7 +185,7 @@ mc.controller('mainc', ['$scope', '$http', '$routeParams', '$location', function
     //userName = "Priya"   //Have to remove this
     //$scope.userName = userName;
     $scope.userName = localStorage.getItem("UID");
-        if($scope.userName != null) {
+    if($scope.userName != null) {
         $scope.if_loggedIn = true;
     }
     var location = "";
@@ -315,12 +315,44 @@ mc.controller('mainc', ['$scope', '$http', '$routeParams', '$location', function
         localStorage.removeItem("UID");
     };
 
+    var voted = new Array();
+
+    $scope.votes = function(y,z){
+        if(voted[z] == undefined && localStorage.getItem("UID")!= null)
+        {
+            voted[z] = 1;
+            if(y ==1){
+                $scope.locations[z].UpVotes += y;
+                var data = {
+                    PostID : $scope.locations[z].PostID,
+                    UpVotes : $scope.locations[z].UpVotes,
+                    DownVotes : $scope.locations[z].DownVotes
+                };
+            }
+            else {
+                $scope.locations[z].DownVotes -= y;
+                var data = {
+                    PostID : $scope.locations[z].PostID,
+                    UpVotes : $scope.locations[z].UpVotes,
+                    DownVotes : $scope.locations[z].DownVotes
+                };
+            }
+
+            $http.post('/updateVote', $scope.locations[z])
+                .success(function (data, status, headers, config) {
+                    console.log("Done");
+                });
+        }
+
+        console.log(data);
+    };
+
 }]);
 
 mc.controller('detailc', ['$scope', '$http', '$location', function($scope, $http, $location){
     var input = document.getElementById('searchTextField');
     var options = {
-        
+
     };
     autocomplete = new google.maps.places.Autocomplete(input, options);
     autocomplete.addListener('place_changed', getPlaceData);

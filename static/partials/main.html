@@ -55,8 +55,8 @@
                     <h6><b>Description:</b> {{item.Description}}</h6>
                     <h6><b>Price:</b> {{item.Price}}</h6>
                     <h6><b>Time:</b> {{item.Time}}</h6>
-                    <h7 class="fa fa-thumbs-o-up">{{item.UpVotes}} </h7>
-                    <h7 class="fa fa-thumbs-o-down">{{item.DownVotes}} </h7>
+                    <h7 class="fa fa-thumbs-o-up" ng-model="upv" ng-click="votes(1, locations.indexOf(item))">{{item.UpVotes}} </h7>
+                    <h7 class="fa fa-thumbs-o-down" ng-model="dwnv" ng-click="votes(-1,locations.indexOf(item))">{{item.DownVotes}} </h7>
                 </div>
             </div>
         </div>

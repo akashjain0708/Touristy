@@ -377,6 +377,7 @@ mc.controller('updatec', ['$scope', '$http', '$routeParams', '$location', functi
         $http.post('/editPost', data)
             .success(function (data, status, headers, config) {
                 // $scope.update = data;
+                console.log("Returns from update post");
                 $location.path('/mypost');
 
             })

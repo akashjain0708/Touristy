@@ -36,7 +36,7 @@ def new_click_recommendation(location):
         clusters = len(recommend_table[0]) - 2
     labels = return_cluster_labels(recommend_table, clusters)
     # Get label for current element
-    print("Hey")
+    print("Printing labels: " +str(labels))
     print(str(location_table))
     print(str(location_table[len(location_table) - 1]))
     # print("Type:" + type(location_table[len(location_table) - 1]))

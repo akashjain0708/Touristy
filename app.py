@@ -323,7 +323,7 @@ def edit_post_by_id():
     print("Post edited")
     edit_attraction(edit_at_obj, post_id)
     print("Attraction edited")
-    return "Success"
+    return json.dumps("Success")
 
 
 @app.route("/logoutUser")

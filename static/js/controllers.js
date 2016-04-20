@@ -15,6 +15,7 @@ mc.controller('hc', ['$scope', '$http', '$location', function($scope, $http, $lo
 }]);
 
 mc.controller('hmc', ['$scope', '$http', '$location', function($scope, $http, $location){
+    $scope.userName = localStorage.getItem("UID");
     var map, heatmap;
     //var tempLat = 37.774546;
     //var tempLong = -122.433523;
@@ -360,7 +361,7 @@ mc.controller('detailc', ['$scope', '$http', '$location', function($scope, $http
     };
 }]);
 
-mc.controller('updatec', ['$scope', '$http', '$routeParams', function($scope, $http, $routeParams){
+mc.controller('updatec', ['$scope', '$http', '$routeParams', '$location', function($scope, $http, $routeParams, $location){
     //userName = "Priya";
     //$scope.userName = userName;
     $scope.userName = localStorage.getItem("UID");
@@ -376,6 +377,8 @@ mc.controller('updatec', ['$scope', '$http', '$routeParams', function($scope, $h
         $http.post('/editPost', data)
             .success(function (data, status, headers, config) {
                 // $scope.update = data;
+                $location.path('/mypost');
+
             })
             .error(function (data, status, header, config) {
                 $scope.ResponseDetails = "Data: " + data +

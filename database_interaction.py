@@ -52,20 +52,16 @@ def edit_attraction(json_object, aid):
             l = json_object.get("AttractionID")
             cur.execute("UPDATE Attractions SET AttractionID=? WHERE postID=?", (l, aid))
 
-        if json_object.get("time"):
-            l = json_object.get("time")
+        if json_object.get("Time"):
+            l = json_object.get("Time")
             cur.execute("UPDATE Attractions SET time=? WHERE postID=?", (l, aid))
 
-        if json_object.get("cost"):
-            l = json_object.get("cost")
+        if json_object.get("Cost"):
+            l = json_object.get("Cost")
             cur.execute("UPDATE Attractions SET cost=? WHERE postID=?", (l, aid))
 
-        if json_object.get("PostID"):
-            l = json_object.get("PostID")
-            cur.execute("UPDATE Attractions SET postID=? WHERE postID=?", (l, aid))
-
-        if json_object.get("rating"):
-            l = json_object.get("rating")
+        if json_object.get("Rating"):
+            l = json_object.get("Rating")
             cur.execute("UPDATE Attractions SET rating=? WHERE postID=?", (l, aid))
 
         print('hey')

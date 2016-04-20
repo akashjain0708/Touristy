@@ -344,6 +344,7 @@ def select_lat_long_time_cost_rating(latitude, longitude, time, cost, rating):
 
 
 def heatmap():
+    print("Inside heatmap")
     connection = sqlite3.connect(file_name, isolation_level=None, timeout=11)
     cur = connection.cursor()
     cur.execute("SELECT * FROM Attractions")
@@ -351,7 +352,7 @@ def heatmap():
     data = []
     for row in rows:
         cur.execute(
-            "SELECT * FROM Post p INNER JOIN Attractions a ON p.postID=a.postID WHERE Latitude='{}' AND Longitude='{}'".format(
+            "SELECT * FROM Posts p INNER JOIN Attractions a ON p.postID=a.postID WHERE Latitude='{}' AND Longitude='{}'".format(
                 row[1], row[2]))
         posts = cur.fetchall()
         lenposts = len(posts)

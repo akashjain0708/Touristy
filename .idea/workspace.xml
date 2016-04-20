@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="13462c01-1851-4913-847d-860e7d849230" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.py" afterPath="$PROJECT_DIR$/app.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/js/controllers.js" afterPath="$PROJECT_DIR$/static/js/controllers.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database_interaction.py" afterPath="$PROJECT_DIR$/database_interaction.py" />
     </list>
     <ignored path="Touristy.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -31,11 +31,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="controllers.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="controllers.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/static/js/controllers.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5402985">
-              <caret line="290" column="46" selection-start-line="290" selection-start-column="46" selection-end-line="290" selection-end-column="46" />
+            <state vertical-scroll-proportion="-8.027778">
+              <caret line="223" column="33" selection-start-line="223" selection-start-column="33" selection-end-line="223" selection-end-column="33" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -47,69 +47,69 @@
         <entry file="file://$PROJECT_DIR$/app.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="145" column="0" selection-start-line="145" selection-start-column="0" selection-end-line="145" selection-end-column="0" />
+              <caret line="148" column="15" selection-start-line="148" selection-start-column="15" selection-end-line="148" selection-end-column="15" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
-                <marker date="1461121767271" expanded="true" signature="9533:9575" placeholder="SELECT userI... User" />
+                <marker date="1461122689162" expanded="true" signature="9584:9626" placeholder="SELECT userI... User" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="database_interaction.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="database_interaction.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/database_interaction.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.6111111">
-              <caret line="342" column="0" selection-start-line="342" selection-start-column="0" selection-end-line="342" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.36567163">
+              <caret line="346" column="27" selection-start-line="346" selection-start-column="27" selection-end-line="346" selection-end-column="27" />
               <folding>
                 <element signature="e#307#316#0" expanded="true" />
-                <marker date="1461121015687" expanded="true" signature="785:851" placeholder="INSERT INTO Attractions... " />
-                <marker date="1461121015687" expanded="true" signature="785:857" placeholder="INSERT INTO Attractions... " />
-                <marker date="1461121015687" expanded="true" signature="785:863" placeholder="INSERT INTO Attractions... " />
-                <marker date="1461121015687" expanded="true" signature="785:910" placeholder="INSERT INTO Attractions... " />
-                <marker date="1461121015687" expanded="true" signature="1468:1517" placeholder="UPDATE Attra... " />
-                <marker date="1461121015687" expanded="true" signature="1640:1688" placeholder="UPDATE Attra... " />
-                <marker date="1461121015687" expanded="true" signature="1803:1847" placeholder="UPDATE Attra... " />
-                <marker date="1461121015687" expanded="true" signature="1978:2030" placeholder="UPDATE Attra... " />
-                <marker date="1461121015687" expanded="true" signature="2145:2189" placeholder="UPDATE Attra... " />
-                <marker date="1461121015687" expanded="true" signature="2304:2348" placeholder="UPDATE Attra... " />
-                <marker date="1461121015687" expanded="true" signature="2467:2513" placeholder="UPDATE Attra... " />
-                <marker date="1461121015687" expanded="true" signature="2802:2840" placeholder="DELETE FROM " />
-                <marker date="1461121015687" expanded="true" signature="3288:3378" placeholder="INSERT INTO Posts... " />
-                <marker date="1461121015687" expanded="true" signature="3986:4026" placeholder="UPDATE Posts... " />
-                <marker date="1461121015687" expanded="true" signature="4147:4188" placeholder="UPDATE Posts... " />
-                <marker date="1461121015687" expanded="true" signature="4313:4356" placeholder="UPDATE Posts... " />
-                <marker date="1461121015687" expanded="true" signature="4485:4530" placeholder="UPDATE Posts... " />
-                <marker date="1461121015687" expanded="true" signature="4649:4689" placeholder="UPDATE Posts... " />
-                <marker date="1461121015687" expanded="true" signature="4970:5008" placeholder="DELETE FROM " />
-                <marker date="1461121015687" expanded="true" signature="5040:5072" placeholder="DELETE FROM " />
-                <marker date="1461121015687" expanded="true" signature="5442:5661" placeholder="SELECT p.Upv... User" />
-                <marker date="1461121015687" expanded="true" signature="6108:6202" placeholder="INSERT INTO Users... " />
-                <marker date="1461121015687" expanded="true" signature="6633:6664" placeholder="DELETE FROM " />
-                <marker date="1461121015687" expanded="true" signature="6922:6962" placeholder="SELECT Passw... User" />
-                <marker date="1461121015687" expanded="true" signature="7941:8156" placeholder="SELECT p.Upv... Posts" />
-                <marker date="1461121015687" expanded="true" signature="8743:8976" placeholder="SELECT p.Upv... Posts" />
-                <marker date="1461121015687" expanded="true" signature="9519:9748" placeholder="SELECT p.Upv... Posts" />
-                <marker date="1461121015687" expanded="true" signature="10304:10551" placeholder="SELECT p.Upv... Posts" />
-                <marker date="1461121015687" expanded="true" signature="11100:11328" placeholder="SELECT p.Upv... Posts" />
-                <marker date="1461121015687" expanded="true" signature="11884:12132" placeholder="SELECT p.Upv... Posts" />
-                <marker date="1461121015687" expanded="true" signature="12692:12935" placeholder="SELECT p.Upv... Posts" />
-                <marker date="1461121015687" expanded="true" signature="13508:13770" placeholder="SELECT p.Upv... Posts" />
-                <marker date="1461121015687" expanded="true" signature="13591:13770" placeholder="SELECT p.Upv... Posts" />
-                <marker date="1461121015687" expanded="true" signature="14183:14208" placeholder="SELECT * FRO... Attractions" />
-                <marker date="1461121015687" expanded="true" signature="14306:14411" placeholder="SELECT * FRO... Post" />
-                <marker date="1461121015687" expanded="true" signature="14853:14878" placeholder="SELECT * FRO... Attractions" />
-                <marker date="1461121015687" expanded="true" signature="16429:16535" placeholder="SELECT * FRO... Post" />
-                <marker date="1461121015687" expanded="true" signature="16713:16819" placeholder="SELECT * FRO... Post" />
-                <marker date="1461121015687" expanded="true" signature="16997:17103" placeholder="SELECT * FRO... Post" />
-                <marker date="1461121015687" expanded="true" signature="17281:17387" placeholder="SELECT * FRO... Post" />
-                <marker date="1461121015687" expanded="true" signature="17853:17876" placeholder="PRAGMA table... " />
-                <marker date="1461121015687" expanded="true" signature="17954:18015" placeholder="SELECT * Fro... Tags" />
-                <marker date="1461121015687" expanded="true" signature="18131:18189" placeholder="INSERT INTO Tags... " />
-                <marker date="1461121015687" expanded="true" signature="18299:18350" placeholder="ALTER TABLE Tags... " />
-                <marker date="1461121015687" expanded="true" signature="18407:18474" placeholder="UPDATE Tags " />
-                <marker date="1461121015687" expanded="true" signature="18605:18672" placeholder="UPDATE Tags " />
-                <marker date="1461121015687" expanded="true" signature="18859:18877" placeholder="SELECT * FRO... Tags" />
+                <marker date="1461122698717" expanded="true" signature="785:851" placeholder="INSERT INTO Attractions... " />
+                <marker date="1461122698717" expanded="true" signature="785:857" placeholder="INSERT INTO Attractions... " />
+                <marker date="1461122698717" expanded="true" signature="785:863" placeholder="INSERT INTO Attractions... " />
+                <marker date="1461122698717" expanded="true" signature="785:910" placeholder="INSERT INTO Attractions... " />
+                <marker date="1461122698717" expanded="true" signature="1468:1517" placeholder="UPDATE Attra... " />
+                <marker date="1461122698717" expanded="true" signature="1640:1688" placeholder="UPDATE Attra... " />
+                <marker date="1461122698717" expanded="true" signature="1803:1847" placeholder="UPDATE Attra... " />
+                <marker date="1461122698717" expanded="true" signature="1978:2030" placeholder="UPDATE Attra... " />
+                <marker date="1461122698717" expanded="true" signature="2145:2189" placeholder="UPDATE Attra... " />
+                <marker date="1461122698717" expanded="true" signature="2304:2348" placeholder="UPDATE Attra... " />
+                <marker date="1461122698717" expanded="true" signature="2467:2513" placeholder="UPDATE Attra... " />
+                <marker date="1461122698717" expanded="true" signature="2802:2840" placeholder="DELETE FROM " />
+                <marker date="1461122698717" expanded="true" signature="3288:3378" placeholder="INSERT INTO Posts... " />
+                <marker date="1461122698717" expanded="true" signature="3986:4026" placeholder="UPDATE Posts... " />
+                <marker date="1461122698717" expanded="true" signature="4147:4188" placeholder="UPDATE Posts... " />
+                <marker date="1461122698717" expanded="true" signature="4313:4356" placeholder="UPDATE Posts... " />
+                <marker date="1461122698717" expanded="true" signature="4485:4530" placeholder="UPDATE Posts... " />
+                <marker date="1461122698717" expanded="true" signature="4649:4689" placeholder="UPDATE Posts... " />
+                <marker date="1461122698717" expanded="true" signature="4970:5008" placeholder="DELETE FROM " />
+                <marker date="1461122698717" expanded="true" signature="5040:5072" placeholder="DELETE FROM " />
+                <marker date="1461122698717" expanded="true" signature="5442:5661" placeholder="SELECT p.Upv... User" />
+                <marker date="1461122698717" expanded="true" signature="6108:6202" placeholder="INSERT INTO Users... " />
+                <marker date="1461122698717" expanded="true" signature="6633:6664" placeholder="DELETE FROM " />
+                <marker date="1461122698717" expanded="true" signature="6922:6962" placeholder="SELECT Passw... User" />
+                <marker date="1461122698717" expanded="true" signature="7941:8156" placeholder="SELECT p.Upv... Posts" />
+                <marker date="1461122698717" expanded="true" signature="8743:8976" placeholder="SELECT p.Upv... Posts" />
+                <marker date="1461122698717" expanded="true" signature="9519:9748" placeholder="SELECT p.Upv... Posts" />
+                <marker date="1461122698717" expanded="true" signature="10304:10551" placeholder="SELECT p.Upv... Posts" />
+                <marker date="1461122698717" expanded="true" signature="11100:11328" placeholder="SELECT p.Upv... Posts" />
+                <marker date="1461122698717" expanded="true" signature="11884:12132" placeholder="SELECT p.Upv... Posts" />
+                <marker date="1461122698717" expanded="true" signature="12692:12935" placeholder="SELECT p.Upv... Posts" />
+                <marker date="1461122698717" expanded="true" signature="13508:13770" placeholder="SELECT p.Upv... Posts" />
+                <marker date="1461122698717" expanded="true" signature="13591:13770" placeholder="SELECT p.Upv... Posts" />
+                <marker date="1461122698717" expanded="true" signature="14211:14236" placeholder="SELECT * FRO... Attractions" />
+                <marker date="1461122698717" expanded="true" signature="14334:14440" placeholder="SELECT * FRO... Post" />
+                <marker date="1461122698717" expanded="true" signature="14882:14907" placeholder="SELECT * FRO... Attractions" />
+                <marker date="1461122698717" expanded="true" signature="16458:16564" placeholder="SELECT * FRO... Post" />
+                <marker date="1461122698717" expanded="true" signature="16742:16848" placeholder="SELECT * FRO... Post" />
+                <marker date="1461122698717" expanded="true" signature="17026:17132" placeholder="SELECT * FRO... Post" />
+                <marker date="1461122698717" expanded="true" signature="17310:17416" placeholder="SELECT * FRO... Post" />
+                <marker date="1461122698717" expanded="true" signature="17882:17905" placeholder="PRAGMA table... " />
+                <marker date="1461122698717" expanded="true" signature="17983:18044" placeholder="SELECT * Fro... Tags" />
+                <marker date="1461122698717" expanded="true" signature="18160:18218" placeholder="INSERT INTO Tags... " />
+                <marker date="1461122698717" expanded="true" signature="18328:18379" placeholder="ALTER TABLE Tags... " />
+                <marker date="1461122698717" expanded="true" signature="18436:18503" placeholder="UPDATE Tags " />
+                <marker date="1461122698717" expanded="true" signature="18634:18701" placeholder="UPDATE Tags " />
+                <marker date="1461122698717" expanded="true" signature="18888:18906" placeholder="SELECT * FRO... Tags" />
               </folding>
             </state>
           </provider>
@@ -208,9 +208,9 @@
         <option value="$PROJECT_DIR$/static/css/styles.css" />
         <option value="$PROJECT_DIR$/static/partials/mypost.html" />
         <option value="$PROJECT_DIR$/recommender.py" />
-        <option value="$PROJECT_DIR$/database_interaction.py" />
-        <option value="$PROJECT_DIR$/app.py" />
         <option value="$PROJECT_DIR$/static/js/controllers.js" />
+        <option value="$PROJECT_DIR$/app.py" />
+        <option value="$PROJECT_DIR$/database_interaction.py" />
       </list>
     </option>
   </component>
@@ -770,7 +770,7 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
-            <marker date="1461121767271" expanded="true" signature="9533:9575" placeholder="SELECT userI... User" />
+            <marker date="1461122689162" expanded="true" signature="9584:9626" placeholder="SELECT userI... User" />
           </folding>
         </state>
       </provider>
@@ -800,53 +800,53 @@
           <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
           <folding>
             <element signature="e#307#316#0" expanded="true" />
-            <marker date="1461121015687" expanded="true" signature="785:851" placeholder="INSERT INTO Attractions... " />
-            <marker date="1461121015687" expanded="true" signature="785:857" placeholder="INSERT INTO Attractions... " />
-            <marker date="1461121015687" expanded="true" signature="785:863" placeholder="INSERT INTO Attractions... " />
-            <marker date="1461121015687" expanded="true" signature="785:910" placeholder="INSERT INTO Attractions... " />
-            <marker date="1461121015687" expanded="true" signature="1468:1517" placeholder="UPDATE Attra... " />
-            <marker date="1461121015687" expanded="true" signature="1640:1688" placeholder="UPDATE Attra... " />
-            <marker date="1461121015687" expanded="true" signature="1803:1847" placeholder="UPDATE Attra... " />
-            <marker date="1461121015687" expanded="true" signature="1978:2030" placeholder="UPDATE Attra... " />
-            <marker date="1461121015687" expanded="true" signature="2145:2189" placeholder="UPDATE Attra... " />
-            <marker date="1461121015687" expanded="true" signature="2304:2348" placeholder="UPDATE Attra... " />
-            <marker date="1461121015687" expanded="true" signature="2467:2513" placeholder="UPDATE Attra... " />
-            <marker date="1461121015687" expanded="true" signature="2802:2840" placeholder="DELETE FROM " />
-            <marker date="1461121015687" expanded="true" signature="3288:3378" placeholder="INSERT INTO Posts... " />
-            <marker date="1461121015687" expanded="true" signature="3986:4026" placeholder="UPDATE Posts... " />
-            <marker date="1461121015687" expanded="true" signature="4147:4188" placeholder="UPDATE Posts... " />
-            <marker date="1461121015687" expanded="true" signature="4313:4356" placeholder="UPDATE Posts... " />
-            <marker date="1461121015687" expanded="true" signature="4485:4530" placeholder="UPDATE Posts... " />
-            <marker date="1461121015687" expanded="true" signature="4649:4689" placeholder="UPDATE Posts... " />
-            <marker date="1461121015687" expanded="true" signature="4970:5008" placeholder="DELETE FROM " />
-            <marker date="1461121015687" expanded="true" signature="5040:5072" placeholder="DELETE FROM " />
-            <marker date="1461121015687" expanded="true" signature="5442:5661" placeholder="SELECT p.Upv... User" />
-            <marker date="1461121015687" expanded="true" signature="6108:6202" placeholder="INSERT INTO Users... " />
-            <marker date="1461121015687" expanded="true" signature="6633:6664" placeholder="DELETE FROM " />
-            <marker date="1461121015687" expanded="true" signature="6922:6962" placeholder="SELECT Passw... User" />
-            <marker date="1461121015687" expanded="true" signature="7941:8156" placeholder="SELECT p.Upv... Posts" />
-            <marker date="1461121015687" expanded="true" signature="8743:8976" placeholder="SELECT p.Upv... Posts" />
-            <marker date="1461121015687" expanded="true" signature="9519:9748" placeholder="SELECT p.Upv... Posts" />
-            <marker date="1461121015687" expanded="true" signature="10304:10551" placeholder="SELECT p.Upv... Posts" />
-            <marker date="1461121015687" expanded="true" signature="11100:11328" placeholder="SELECT p.Upv... Posts" />
-            <marker date="1461121015687" expanded="true" signature="11884:12132" placeholder="SELECT p.Upv... Posts" />
-            <marker date="1461121015687" expanded="true" signature="12692:12935" placeholder="SELECT p.Upv... Posts" />
-            <marker date="1461121015687" expanded="true" signature="13508:13770" placeholder="SELECT p.Upv... Posts" />
-            <marker date="1461121015687" expanded="true" signature="13591:13770" placeholder="SELECT p.Upv... Posts" />
-            <marker date="1461121015687" expanded="true" signature="14183:14208" placeholder="SELECT * FRO... Attractions" />
-            <marker date="1461121015687" expanded="true" signature="14306:14411" placeholder="SELECT * FRO... Post" />
-            <marker date="1461121015687" expanded="true" signature="14853:14878" placeholder="SELECT * FRO... Attractions" />
-            <marker date="1461121015687" expanded="true" signature="16429:16535" placeholder="SELECT * FRO... Post" />
-            <marker date="1461121015687" expanded="true" signature="16713:16819" placeholder="SELECT * FRO... Post" />
-            <marker date="1461121015687" expanded="true" signature="16997:17103" placeholder="SELECT * FRO... Post" />
-            <marker date="1461121015687" expanded="true" signature="17281:17387" placeholder="SELECT * FRO... Post" />
-            <marker date="1461121015687" expanded="true" signature="17853:17876" placeholder="PRAGMA table... " />
-            <marker date="1461121015687" expanded="true" signature="17954:18015" placeholder="SELECT * Fro... Tags" />
-            <marker date="1461121015687" expanded="true" signature="18131:18189" placeholder="INSERT INTO Tags... " />
-            <marker date="1461121015687" expanded="true" signature="18299:18350" placeholder="ALTER TABLE Tags... " />
-            <marker date="1461121015687" expanded="true" signature="18407:18474" placeholder="UPDATE Tags " />
-            <marker date="1461121015687" expanded="true" signature="18605:18672" placeholder="UPDATE Tags " />
-            <marker date="1461121015687" expanded="true" signature="18859:18877" placeholder="SELECT * FRO... Tags" />
+            <marker date="1461122698717" expanded="true" signature="785:851" placeholder="INSERT INTO Attractions... " />
+            <marker date="1461122698717" expanded="true" signature="785:857" placeholder="INSERT INTO Attractions... " />
+            <marker date="1461122698717" expanded="true" signature="785:863" placeholder="INSERT INTO Attractions... " />
+            <marker date="1461122698717" expanded="true" signature="785:910" placeholder="INSERT INTO Attractions... " />
+            <marker date="1461122698717" expanded="true" signature="1468:1517" placeholder="UPDATE Attra... " />
+            <marker date="1461122698717" expanded="true" signature="1640:1688" placeholder="UPDATE Attra... " />
+            <marker date="1461122698717" expanded="true" signature="1803:1847" placeholder="UPDATE Attra... " />
+            <marker date="1461122698717" expanded="true" signature="1978:2030" placeholder="UPDATE Attra... " />
+            <marker date="1461122698717" expanded="true" signature="2145:2189" placeholder="UPDATE Attra... " />
+            <marker date="1461122698717" expanded="true" signature="2304:2348" placeholder="UPDATE Attra... " />
+            <marker date="1461122698717" expanded="true" signature="2467:2513" placeholder="UPDATE Attra... " />
+            <marker date="1461122698717" expanded="true" signature="2802:2840" placeholder="DELETE FROM " />
+            <marker date="1461122698717" expanded="true" signature="3288:3378" placeholder="INSERT INTO Posts... " />
+            <marker date="1461122698717" expanded="true" signature="3986:4026" placeholder="UPDATE Posts... " />
+            <marker date="1461122698717" expanded="true" signature="4147:4188" placeholder="UPDATE Posts... " />
+            <marker date="1461122698717" expanded="true" signature="4313:4356" placeholder="UPDATE Posts... " />
+            <marker date="1461122698717" expanded="true" signature="4485:4530" placeholder="UPDATE Posts... " />
+            <marker date="1461122698717" expanded="true" signature="4649:4689" placeholder="UPDATE Posts... " />
+            <marker date="1461122698717" expanded="true" signature="4970:5008" placeholder="DELETE FROM " />
+            <marker date="1461122698717" expanded="true" signature="5040:5072" placeholder="DELETE FROM " />
+            <marker date="1461122698717" expanded="true" signature="5442:5661" placeholder="SELECT p.Upv... User" />
+            <marker date="1461122698717" expanded="true" signature="6108:6202" placeholder="INSERT INTO Users... " />
+            <marker date="1461122698717" expanded="true" signature="6633:6664" placeholder="DELETE FROM " />
+            <marker date="1461122698717" expanded="true" signature="6922:6962" placeholder="SELECT Passw... User" />
+            <marker date="1461122698717" expanded="true" signature="7941:8156" placeholder="SELECT p.Upv... Posts" />
+            <marker date="1461122698717" expanded="true" signature="8743:8976" placeholder="SELECT p.Upv... Posts" />
+            <marker date="1461122698717" expanded="true" signature="9519:9748" placeholder="SELECT p.Upv... Posts" />
+            <marker date="1461122698717" expanded="true" signature="10304:10551" placeholder="SELECT p.Upv... Posts" />
+            <marker date="1461122698717" expanded="true" signature="11100:11328" placeholder="SELECT p.Upv... Posts" />
+            <marker date="1461122698717" expanded="true" signature="11884:12132" placeholder="SELECT p.Upv... Posts" />
+            <marker date="1461122698717" expanded="true" signature="12692:12935" placeholder="SELECT p.Upv... Posts" />
+            <marker date="1461122698717" expanded="true" signature="13508:13770" placeholder="SELECT p.Upv... Posts" />
+            <marker date="1461122698717" expanded="true" signature="13591:13770" placeholder="SELECT p.Upv... Posts" />
+            <marker date="1461122698717" expanded="true" signature="14211:14236" placeholder="SELECT * FRO... Attractions" />
+            <marker date="1461122698717" expanded="true" signature="14334:14440" placeholder="SELECT * FRO... Post" />
+            <marker date="1461122698717" expanded="true" signature="14882:14907" placeholder="SELECT * FRO... Attractions" />
+            <marker date="1461122698717" expanded="true" signature="16458:16564" placeholder="SELECT * FRO... Post" />
+            <marker date="1461122698717" expanded="true" signature="16742:16848" placeholder="SELECT * FRO... Post" />
+            <marker date="1461122698717" expanded="true" signature="17026:17132" placeholder="SELECT * FRO... Post" />
+            <marker date="1461122698717" expanded="true" signature="17310:17416" placeholder="SELECT * FRO... Post" />
+            <marker date="1461122698717" expanded="true" signature="17882:17905" placeholder="PRAGMA table... " />
+            <marker date="1461122698717" expanded="true" signature="17983:18044" placeholder="SELECT * Fro... Tags" />
+            <marker date="1461122698717" expanded="true" signature="18160:18218" placeholder="INSERT INTO Tags... " />
+            <marker date="1461122698717" expanded="true" signature="18328:18379" placeholder="ALTER TABLE Tags... " />
+            <marker date="1461122698717" expanded="true" signature="18436:18503" placeholder="UPDATE Tags " />
+            <marker date="1461122698717" expanded="true" signature="18634:18701" placeholder="UPDATE Tags " />
+            <marker date="1461122698717" expanded="true" signature="18888:18906" placeholder="SELECT * FRO... Tags" />
           </folding>
         </state>
       </provider>
@@ -909,7 +909,7 @@
           <caret line="116" column="21" selection-start-line="116" selection-start-column="21" selection-end-line="116" selection-end-column="21" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
-            <marker date="1461121767271" expanded="true" signature="9533:9575" placeholder="SELECT userI... User" />
+            <marker date="1461122689162" expanded="true" signature="9584:9626" placeholder="SELECT userI... User" />
           </folding>
         </state>
       </provider>
@@ -920,53 +920,53 @@
           <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding>
             <element signature="e#307#316#0" expanded="true" />
-            <marker date="1461121015687" expanded="true" signature="785:851" placeholder="INSERT INTO Attractions... " />
-            <marker date="1461121015687" expanded="true" signature="785:857" placeholder="INSERT INTO Attractions... " />
-            <marker date="1461121015687" expanded="true" signature="785:863" placeholder="INSERT INTO Attractions... " />
-            <marker date="1461121015687" expanded="true" signature="785:910" placeholder="INSERT INTO Attractions... " />
-            <marker date="1461121015687" expanded="true" signature="1468:1517" placeholder="UPDATE Attra... " />
-            <marker date="1461121015687" expanded="true" signature="1640:1688" placeholder="UPDATE Attra... " />
-            <marker date="1461121015687" expanded="true" signature="1803:1847" placeholder="UPDATE Attra... " />
-            <marker date="1461121015687" expanded="true" signature="1978:2030" placeholder="UPDATE Attra... " />
-            <marker date="1461121015687" expanded="true" signature="2145:2189" placeholder="UPDATE Attra... " />
-            <marker date="1461121015687" expanded="true" signature="2304:2348" placeholder="UPDATE Attra... " />
-            <marker date="1461121015687" expanded="true" signature="2467:2513" placeholder="UPDATE Attra... " />
-            <marker date="1461121015687" expanded="true" signature="2802:2840" placeholder="DELETE FROM " />
-            <marker date="1461121015687" expanded="true" signature="3288:3378" placeholder="INSERT INTO Posts... " />
-            <marker date="1461121015687" expanded="true" signature="3986:4026" placeholder="UPDATE Posts... " />
-            <marker date="1461121015687" expanded="true" signature="4147:4188" placeholder="UPDATE Posts... " />
-            <marker date="1461121015687" expanded="true" signature="4313:4356" placeholder="UPDATE Posts... " />
-            <marker date="1461121015687" expanded="true" signature="4485:4530" placeholder="UPDATE Posts... " />
-            <marker date="1461121015687" expanded="true" signature="4649:4689" placeholder="UPDATE Posts... " />
-            <marker date="1461121015687" expanded="true" signature="4970:5008" placeholder="DELETE FROM " />
-            <marker date="1461121015687" expanded="true" signature="5040:5072" placeholder="DELETE FROM " />
-            <marker date="1461121015687" expanded="true" signature="5442:5661" placeholder="SELECT p.Upv... User" />
-            <marker date="1461121015687" expanded="true" signature="6108:6202" placeholder="INSERT INTO Users... " />
-            <marker date="1461121015687" expanded="true" signature="6633:6664" placeholder="DELETE FROM " />
-            <marker date="1461121015687" expanded="true" signature="6922:6962" placeholder="SELECT Passw... User" />
-            <marker date="1461121015687" expanded="true" signature="7941:8156" placeholder="SELECT p.Upv... Posts" />
-            <marker date="1461121015687" expanded="true" signature="8743:8976" placeholder="SELECT p.Upv... Posts" />
-            <marker date="1461121015687" expanded="true" signature="9519:9748" placeholder="SELECT p.Upv... Posts" />
-            <marker date="1461121015687" expanded="true" signature="10304:10551" placeholder="SELECT p.Upv... Posts" />
-            <marker date="1461121015687" expanded="true" signature="11100:11328" placeholder="SELECT p.Upv... Posts" />
-            <marker date="1461121015687" expanded="true" signature="11884:12132" placeholder="SELECT p.Upv... Posts" />
-            <marker date="1461121015687" expanded="true" signature="12692:12935" placeholder="SELECT p.Upv... Posts" />
-            <marker date="1461121015687" expanded="true" signature="13508:13770" placeholder="SELECT p.Upv... Posts" />
-            <marker date="1461121015687" expanded="true" signature="13591:13770" placeholder="SELECT p.Upv... Posts" />
-            <marker date="1461121015687" expanded="true" signature="14183:14208" placeholder="SELECT * FRO... Attractions" />
-            <marker date="1461121015687" expanded="true" signature="14306:14411" placeholder="SELECT * FRO... Post" />
-            <marker date="1461121015687" expanded="true" signature="14853:14878" placeholder="SELECT * FRO... Attractions" />
-            <marker date="1461121015687" expanded="true" signature="16429:16535" placeholder="SELECT * FRO... Post" />
-            <marker date="1461121015687" expanded="true" signature="16713:16819" placeholder="SELECT * FRO... Post" />
-            <marker date="1461121015687" expanded="true" signature="16997:17103" placeholder="SELECT * FRO... Post" />
-            <marker date="1461121015687" expanded="true" signature="17281:17387" placeholder="SELECT * FRO... Post" />
-            <marker date="1461121015687" expanded="true" signature="17853:17876" placeholder="PRAGMA table... " />
-            <marker date="1461121015687" expanded="true" signature="17954:18015" placeholder="SELECT * Fro... Tags" />
-            <marker date="1461121015687" expanded="true" signature="18131:18189" placeholder="INSERT INTO Tags... " />
-            <marker date="1461121015687" expanded="true" signature="18299:18350" placeholder="ALTER TABLE Tags... " />
-            <marker date="1461121015687" expanded="true" signature="18407:18474" placeholder="UPDATE Tags " />
-            <marker date="1461121015687" expanded="true" signature="18605:18672" placeholder="UPDATE Tags " />
-            <marker date="1461121015687" expanded="true" signature="18859:18877" placeholder="SELECT * FRO... Tags" />
+            <marker date="1461122698717" expanded="true" signature="785:851" placeholder="INSERT INTO Attractions... " />
+            <marker date="1461122698717" expanded="true" signature="785:857" placeholder="INSERT INTO Attractions... " />
+            <marker date="1461122698717" expanded="true" signature="785:863" placeholder="INSERT INTO Attractions... " />
+            <marker date="1461122698717" expanded="true" signature="785:910" placeholder="INSERT INTO Attractions... " />
+            <marker date="1461122698717" expanded="true" signature="1468:1517" placeholder="UPDATE Attra... " />
+            <marker date="1461122698717" expanded="true" signature="1640:1688" placeholder="UPDATE Attra... " />
+            <marker date="1461122698717" expanded="true" signature="1803:1847" placeholder="UPDATE Attra... " />
+            <marker date="1461122698717" expanded="true" signature="1978:2030" placeholder="UPDATE Attra... " />
+            <marker date="1461122698717" expanded="true" signature="2145:2189" placeholder="UPDATE Attra... " />
+            <marker date="1461122698717" expanded="true" signature="2304:2348" placeholder="UPDATE Attra... " />
+            <marker date="1461122698717" expanded="true" signature="2467:2513" placeholder="UPDATE Attra... " />
+            <marker date="1461122698717" expanded="true" signature="2802:2840" placeholder="DELETE FROM " />
+            <marker date="1461122698717" expanded="true" signature="3288:3378" placeholder="INSERT INTO Posts... " />
+            <marker date="1461122698717" expanded="true" signature="3986:4026" placeholder="UPDATE Posts... " />
+            <marker date="1461122698717" expanded="true" signature="4147:4188" placeholder="UPDATE Posts... " />
+            <marker date="1461122698717" expanded="true" signature="4313:4356" placeholder="UPDATE Posts... " />
+            <marker date="1461122698717" expanded="true" signature="4485:4530" placeholder="UPDATE Posts... " />
+            <marker date="1461122698717" expanded="true" signature="4649:4689" placeholder="UPDATE Posts... " />
+            <marker date="1461122698717" expanded="true" signature="4970:5008" placeholder="DELETE FROM " />
+            <marker date="1461122698717" expanded="true" signature="5040:5072" placeholder="DELETE FROM " />
+            <marker date="1461122698717" expanded="true" signature="5442:5661" placeholder="SELECT p.Upv... User" />
+            <marker date="1461122698717" expanded="true" signature="6108:6202" placeholder="INSERT INTO Users... " />
+            <marker date="1461122698717" expanded="true" signature="6633:6664" placeholder="DELETE FROM " />
+            <marker date="1461122698717" expanded="true" signature="6922:6962" placeholder="SELECT Passw... User" />
+            <marker date="1461122698717" expanded="true" signature="7941:8156" placeholder="SELECT p.Upv... Posts" />
+            <marker date="1461122698717" expanded="true" signature="8743:8976" placeholder="SELECT p.Upv... Posts" />
+            <marker date="1461122698717" expanded="true" signature="9519:9748" placeholder="SELECT p.Upv... Posts" />
+            <marker date="1461122698717" expanded="true" signature="10304:10551" placeholder="SELECT p.Upv... Posts" />
+            <marker date="1461122698717" expanded="true" signature="11100:11328" placeholder="SELECT p.Upv... Posts" />
+            <marker date="1461122698717" expanded="true" signature="11884:12132" placeholder="SELECT p.Upv... Posts" />
+            <marker date="1461122698717" expanded="true" signature="12692:12935" placeholder="SELECT p.Upv... Posts" />
+            <marker date="1461122698717" expanded="true" signature="13508:13770" placeholder="SELECT p.Upv... Posts" />
+            <marker date="1461122698717" expanded="true" signature="13591:13770" placeholder="SELECT p.Upv... Posts" />
+            <marker date="1461122698717" expanded="true" signature="14211:14236" placeholder="SELECT * FRO... Attractions" />
+            <marker date="1461122698717" expanded="true" signature="14334:14440" placeholder="SELECT * FRO... Post" />
+            <marker date="1461122698717" expanded="true" signature="14882:14907" placeholder="SELECT * FRO... Attractions" />
+            <marker date="1461122698717" expanded="true" signature="16458:16564" placeholder="SELECT * FRO... Post" />
+            <marker date="1461122698717" expanded="true" signature="16742:16848" placeholder="SELECT * FRO... Post" />
+            <marker date="1461122698717" expanded="true" signature="17026:17132" placeholder="SELECT * FRO... Post" />
+            <marker date="1461122698717" expanded="true" signature="17310:17416" placeholder="SELECT * FRO... Post" />
+            <marker date="1461122698717" expanded="true" signature="17882:17905" placeholder="PRAGMA table... " />
+            <marker date="1461122698717" expanded="true" signature="17983:18044" placeholder="SELECT * Fro... Tags" />
+            <marker date="1461122698717" expanded="true" signature="18160:18218" placeholder="INSERT INTO Tags... " />
+            <marker date="1461122698717" expanded="true" signature="18328:18379" placeholder="ALTER TABLE Tags... " />
+            <marker date="1461122698717" expanded="true" signature="18436:18503" placeholder="UPDATE Tags " />
+            <marker date="1461122698717" expanded="true" signature="18634:18701" placeholder="UPDATE Tags " />
+            <marker date="1461122698717" expanded="true" signature="18888:18906" placeholder="SELECT * FRO... Tags" />
           </folding>
         </state>
       </provider>
@@ -1019,7 +1019,7 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
-            <marker date="1461121767271" expanded="true" signature="9533:9575" placeholder="SELECT userI... User" />
+            <marker date="1461122689162" expanded="true" signature="9584:9626" placeholder="SELECT userI... User" />
           </folding>
         </state>
       </provider>
@@ -1030,53 +1030,53 @@
           <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding>
             <element signature="e#307#316#0" expanded="true" />
-            <marker date="1461121015687" expanded="true" signature="785:851" placeholder="INSERT INTO Attractions... " />
-            <marker date="1461121015687" expanded="true" signature="785:857" placeholder="INSERT INTO Attractions... " />
-            <marker date="1461121015687" expanded="true" signature="785:863" placeholder="INSERT INTO Attractions... " />
-            <marker date="1461121015687" expanded="true" signature="785:910" placeholder="INSERT INTO Attractions... " />
-            <marker date="1461121015687" expanded="true" signature="1468:1517" placeholder="UPDATE Attra... " />
-            <marker date="1461121015687" expanded="true" signature="1640:1688" placeholder="UPDATE Attra... " />
-            <marker date="1461121015687" expanded="true" signature="1803:1847" placeholder="UPDATE Attra... " />
-            <marker date="1461121015687" expanded="true" signature="1978:2030" placeholder="UPDATE Attra... " />
-            <marker date="1461121015687" expanded="true" signature="2145:2189" placeholder="UPDATE Attra... " />
-            <marker date="1461121015687" expanded="true" signature="2304:2348" placeholder="UPDATE Attra... " />
-            <marker date="1461121015687" expanded="true" signature="2467:2513" placeholder="UPDATE Attra... " />
-            <marker date="1461121015687" expanded="true" signature="2802:2840" placeholder="DELETE FROM " />
-            <marker date="1461121015687" expanded="true" signature="3288:3378" placeholder="INSERT INTO Posts... " />
-            <marker date="1461121015687" expanded="true" signature="3986:4026" placeholder="UPDATE Posts... " />
-            <marker date="1461121015687" expanded="true" signature="4147:4188" placeholder="UPDATE Posts... " />
-            <marker date="1461121015687" expanded="true" signature="4313:4356" placeholder="UPDATE Posts... " />
-            <marker date="1461121015687" expanded="true" signature="4485:4530" placeholder="UPDATE Posts... " />
-            <marker date="1461121015687" expanded="true" signature="4649:4689" placeholder="UPDATE Posts... " />
-            <marker date="1461121015687" expanded="true" signature="4970:5008" placeholder="DELETE FROM " />
-            <marker date="1461121015687" expanded="true" signature="5040:5072" placeholder="DELETE FROM " />
-            <marker date="1461121015687" expanded="true" signature="5442:5661" placeholder="SELECT p.Upv... User" />
-            <marker date="1461121015687" expanded="true" signature="6108:6202" placeholder="INSERT INTO Users... " />
-            <marker date="1461121015687" expanded="true" signature="6633:6664" placeholder="DELETE FROM " />
-            <marker date="1461121015687" expanded="true" signature="6922:6962" placeholder="SELECT Passw... User" />
-            <marker date="1461121015687" expanded="true" signature="7941:8156" placeholder="SELECT p.Upv... Posts" />
-            <marker date="1461121015687" expanded="true" signature="8743:8976" placeholder="SELECT p.Upv... Posts" />
-            <marker date="1461121015687" expanded="true" signature="9519:9748" placeholder="SELECT p.Upv... Posts" />
-            <marker date="1461121015687" expanded="true" signature="10304:10551" placeholder="SELECT p.Upv... Posts" />
-            <marker date="1461121015687" expanded="true" signature="11100:11328" placeholder="SELECT p.Upv... Posts" />
-            <marker date="1461121015687" expanded="true" signature="11884:12132" placeholder="SELECT p.Upv... Posts" />
-            <marker date="1461121015687" expanded="true" signature="12692:12935" placeholder="SELECT p.Upv... Posts" />
-            <marker date="1461121015687" expanded="true" signature="13508:13770" placeholder="SELECT p.Upv... Posts" />
-            <marker date="1461121015687" expanded="true" signature="13591:13770" placeholder="SELECT p.Upv... Posts" />
-            <marker date="1461121015687" expanded="true" signature="14183:14208" placeholder="SELECT * FRO... Attractions" />
-            <marker date="1461121015687" expanded="true" signature="14306:14411" placeholder="SELECT * FRO... Post" />
-            <marker date="1461121015687" expanded="true" signature="14853:14878" placeholder="SELECT * FRO... Attractions" />
-            <marker date="1461121015687" expanded="true" signature="16429:16535" placeholder="SELECT * FRO... Post" />
-            <marker date="1461121015687" expanded="true" signature="16713:16819" placeholder="SELECT * FRO... Post" />
-            <marker date="1461121015687" expanded="true" signature="16997:17103" placeholder="SELECT * FRO... Post" />
-            <marker date="1461121015687" expanded="true" signature="17281:17387" placeholder="SELECT * FRO... Post" />
-            <marker date="1461121015687" expanded="true" signature="17853:17876" placeholder="PRAGMA table... " />
-            <marker date="1461121015687" expanded="true" signature="17954:18015" placeholder="SELECT * Fro... Tags" />
-            <marker date="1461121015687" expanded="true" signature="18131:18189" placeholder="INSERT INTO Tags... " />
-            <marker date="1461121015687" expanded="true" signature="18299:18350" placeholder="ALTER TABLE Tags... " />
-            <marker date="1461121015687" expanded="true" signature="18407:18474" placeholder="UPDATE Tags " />
-            <marker date="1461121015687" expanded="true" signature="18605:18672" placeholder="UPDATE Tags " />
-            <marker date="1461121015687" expanded="true" signature="18859:18877" placeholder="SELECT * FRO... Tags" />
+            <marker date="1461122698717" expanded="true" signature="785:851" placeholder="INSERT INTO Attractions... " />
+            <marker date="1461122698717" expanded="true" signature="785:857" placeholder="INSERT INTO Attractions... " />
+            <marker date="1461122698717" expanded="true" signature="785:863" placeholder="INSERT INTO Attractions... " />
+            <marker date="1461122698717" expanded="true" signature="785:910" placeholder="INSERT INTO Attractions... " />
+            <marker date="1461122698717" expanded="true" signature="1468:1517" placeholder="UPDATE Attra... " />
+            <marker date="1461122698717" expanded="true" signature="1640:1688" placeholder="UPDATE Attra... " />
+            <marker date="1461122698717" expanded="true" signature="1803:1847" placeholder="UPDATE Attra... " />
+            <marker date="1461122698717" expanded="true" signature="1978:2030" placeholder="UPDATE Attra... " />
+            <marker date="1461122698717" expanded="true" signature="2145:2189" placeholder="UPDATE Attra... " />
+            <marker date="1461122698717" expanded="true" signature="2304:2348" placeholder="UPDATE Attra... " />
+            <marker date="1461122698717" expanded="true" signature="2467:2513" placeholder="UPDATE Attra... " />
+            <marker date="1461122698717" expanded="true" signature="2802:2840" placeholder="DELETE FROM " />
+            <marker date="1461122698717" expanded="true" signature="3288:3378" placeholder="INSERT INTO Posts... " />
+            <marker date="1461122698717" expanded="true" signature="3986:4026" placeholder="UPDATE Posts... " />
+            <marker date="1461122698717" expanded="true" signature="4147:4188" placeholder="UPDATE Posts... " />
+            <marker date="1461122698717" expanded="true" signature="4313:4356" placeholder="UPDATE Posts... " />
+            <marker date="1461122698717" expanded="true" signature="4485:4530" placeholder="UPDATE Posts... " />
+            <marker date="1461122698717" expanded="true" signature="4649:4689" placeholder="UPDATE Posts... " />
+            <marker date="1461122698717" expanded="true" signature="4970:5008" placeholder="DELETE FROM " />
+            <marker date="1461122698717" expanded="true" signature="5040:5072" placeholder="DELETE FROM " />
+            <marker date="1461122698717" expanded="true" signature="5442:5661" placeholder="SELECT p.Upv... User" />
+            <marker date="1461122698717" expanded="true" signature="6108:6202" placeholder="INSERT INTO Users... " />
+            <marker date="1461122698717" expanded="true" signature="6633:6664" placeholder="DELETE FROM " />
+            <marker date="1461122698717" expanded="true" signature="6922:6962" placeholder="SELECT Passw... User" />
+            <marker date="1461122698717" expanded="true" signature="7941:8156" placeholder="SELECT p.Upv... Posts" />
+            <marker date="1461122698717" expanded="true" signature="8743:8976" placeholder="SELECT p.Upv... Posts" />
+            <marker date="1461122698717" expanded="true" signature="9519:9748" placeholder="SELECT p.Upv... Posts" />
+            <marker date="1461122698717" expanded="true" signature="10304:10551" placeholder="SELECT p.Upv... Posts" />
+            <marker date="1461122698717" expanded="true" signature="11100:11328" placeholder="SELECT p.Upv... Posts" />
+            <marker date="1461122698717" expanded="true" signature="11884:12132" placeholder="SELECT p.Upv... Posts" />
+            <marker date="1461122698717" expanded="true" signature="12692:12935" placeholder="SELECT p.Upv... Posts" />
+            <marker date="1461122698717" expanded="true" signature="13508:13770" placeholder="SELECT p.Upv... Posts" />
+            <marker date="1461122698717" expanded="true" signature="13591:13770" placeholder="SELECT p.Upv... Posts" />
+            <marker date="1461122698717" expanded="true" signature="14211:14236" placeholder="SELECT * FRO... Attractions" />
+            <marker date="1461122698717" expanded="true" signature="14334:14440" placeholder="SELECT * FRO... Post" />
+            <marker date="1461122698717" expanded="true" signature="14882:14907" placeholder="SELECT * FRO... Attractions" />
+            <marker date="1461122698717" expanded="true" signature="16458:16564" placeholder="SELECT * FRO... Post" />
+            <marker date="1461122698717" expanded="true" signature="16742:16848" placeholder="SELECT * FRO... Post" />
+            <marker date="1461122698717" expanded="true" signature="17026:17132" placeholder="SELECT * FRO... Post" />
+            <marker date="1461122698717" expanded="true" signature="17310:17416" placeholder="SELECT * FRO... Post" />
+            <marker date="1461122698717" expanded="true" signature="17882:17905" placeholder="PRAGMA table... " />
+            <marker date="1461122698717" expanded="true" signature="17983:18044" placeholder="SELECT * Fro... Tags" />
+            <marker date="1461122698717" expanded="true" signature="18160:18218" placeholder="INSERT INTO Tags... " />
+            <marker date="1461122698717" expanded="true" signature="18328:18379" placeholder="ALTER TABLE Tags... " />
+            <marker date="1461122698717" expanded="true" signature="18436:18503" placeholder="UPDATE Tags " />
+            <marker date="1461122698717" expanded="true" signature="18634:18701" placeholder="UPDATE Tags " />
+            <marker date="1461122698717" expanded="true" signature="18888:18906" placeholder="SELECT * FRO... Tags" />
           </folding>
         </state>
       </provider>
@@ -1265,59 +1265,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database_interaction.py">
+    <entry file="file://$PROJECT_DIR$/static/js/controllers.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.6111111">
-          <caret line="342" column="0" selection-start-line="342" selection-start-column="0" selection-end-line="342" selection-end-column="0" />
+        <state vertical-scroll-proportion="-8.027778">
+          <caret line="223" column="33" selection-start-line="223" selection-start-column="33" selection-end-line="223" selection-end-column="33" />
           <folding>
-            <element signature="e#307#316#0" expanded="true" />
-            <marker date="1461121015687" expanded="true" signature="785:851" placeholder="INSERT INTO Attractions... " />
-            <marker date="1461121015687" expanded="true" signature="785:857" placeholder="INSERT INTO Attractions... " />
-            <marker date="1461121015687" expanded="true" signature="785:863" placeholder="INSERT INTO Attractions... " />
-            <marker date="1461121015687" expanded="true" signature="785:910" placeholder="INSERT INTO Attractions... " />
-            <marker date="1461121015687" expanded="true" signature="1468:1517" placeholder="UPDATE Attra... " />
-            <marker date="1461121015687" expanded="true" signature="1640:1688" placeholder="UPDATE Attra... " />
-            <marker date="1461121015687" expanded="true" signature="1803:1847" placeholder="UPDATE Attra... " />
-            <marker date="1461121015687" expanded="true" signature="1978:2030" placeholder="UPDATE Attra... " />
-            <marker date="1461121015687" expanded="true" signature="2145:2189" placeholder="UPDATE Attra... " />
-            <marker date="1461121015687" expanded="true" signature="2304:2348" placeholder="UPDATE Attra... " />
-            <marker date="1461121015687" expanded="true" signature="2467:2513" placeholder="UPDATE Attra... " />
-            <marker date="1461121015687" expanded="true" signature="2802:2840" placeholder="DELETE FROM " />
-            <marker date="1461121015687" expanded="true" signature="3288:3378" placeholder="INSERT INTO Posts... " />
-            <marker date="1461121015687" expanded="true" signature="3986:4026" placeholder="UPDATE Posts... " />
-            <marker date="1461121015687" expanded="true" signature="4147:4188" placeholder="UPDATE Posts... " />
-            <marker date="1461121015687" expanded="true" signature="4313:4356" placeholder="UPDATE Posts... " />
-            <marker date="1461121015687" expanded="true" signature="4485:4530" placeholder="UPDATE Posts... " />
-            <marker date="1461121015687" expanded="true" signature="4649:4689" placeholder="UPDATE Posts... " />
-            <marker date="1461121015687" expanded="true" signature="4970:5008" placeholder="DELETE FROM " />
-            <marker date="1461121015687" expanded="true" signature="5040:5072" placeholder="DELETE FROM " />
-            <marker date="1461121015687" expanded="true" signature="5442:5661" placeholder="SELECT p.Upv... User" />
-            <marker date="1461121015687" expanded="true" signature="6108:6202" placeholder="INSERT INTO Users... " />
-            <marker date="1461121015687" expanded="true" signature="6633:6664" placeholder="DELETE FROM " />
-            <marker date="1461121015687" expanded="true" signature="6922:6962" placeholder="SELECT Passw... User" />
-            <marker date="1461121015687" expanded="true" signature="7941:8156" placeholder="SELECT p.Upv... Posts" />
-            <marker date="1461121015687" expanded="true" signature="8743:8976" placeholder="SELECT p.Upv... Posts" />
-            <marker date="1461121015687" expanded="true" signature="9519:9748" placeholder="SELECT p.Upv... Posts" />
-            <marker date="1461121015687" expanded="true" signature="10304:10551" placeholder="SELECT p.Upv... Posts" />
-            <marker date="1461121015687" expanded="true" signature="11100:11328" placeholder="SELECT p.Upv... Posts" />
-            <marker date="1461121015687" expanded="true" signature="11884:12132" placeholder="SELECT p.Upv... Posts" />
-            <marker date="1461121015687" expanded="true" signature="12692:12935" placeholder="SELECT p.Upv... Posts" />
-            <marker date="1461121015687" expanded="true" signature="13508:13770" placeholder="SELECT p.Upv... Posts" />
-            <marker date="1461121015687" expanded="true" signature="13591:13770" placeholder="SELECT p.Upv... Posts" />
-            <marker date="1461121015687" expanded="true" signature="14183:14208" placeholder="SELECT * FRO... Attractions" />
-            <marker date="1461121015687" expanded="true" signature="14306:14411" placeholder="SELECT * FRO... Post" />
-            <marker date="1461121015687" expanded="true" signature="14853:14878" placeholder="SELECT * FRO... Attractions" />
-            <marker date="1461121015687" expanded="true" signature="16429:16535" placeholder="SELECT * FRO... Post" />
-            <marker date="1461121015687" expanded="true" signature="16713:16819" placeholder="SELECT * FRO... Post" />
-            <marker date="1461121015687" expanded="true" signature="16997:17103" placeholder="SELECT * FRO... Post" />
-            <marker date="1461121015687" expanded="true" signature="17281:17387" placeholder="SELECT * FRO... Post" />
-            <marker date="1461121015687" expanded="true" signature="17853:17876" placeholder="PRAGMA table... " />
-            <marker date="1461121015687" expanded="true" signature="17954:18015" placeholder="SELECT * Fro... Tags" />
-            <marker date="1461121015687" expanded="true" signature="18131:18189" placeholder="INSERT INTO Tags... " />
-            <marker date="1461121015687" expanded="true" signature="18299:18350" placeholder="ALTER TABLE Tags... " />
-            <marker date="1461121015687" expanded="true" signature="18407:18474" placeholder="UPDATE Tags " />
-            <marker date="1461121015687" expanded="true" signature="18605:18672" placeholder="UPDATE Tags " />
-            <marker date="1461121015687" expanded="true" signature="18859:18877" placeholder="SELECT * FRO... Tags" />
+            <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1325,20 +1278,67 @@
     <entry file="file://$PROJECT_DIR$/app.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="145" column="0" selection-start-line="145" selection-start-column="0" selection-end-line="145" selection-end-column="0" />
+          <caret line="148" column="15" selection-start-line="148" selection-start-column="15" selection-end-line="148" selection-end-column="15" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
-            <marker date="1461121767271" expanded="true" signature="9533:9575" placeholder="SELECT userI... User" />
+            <marker date="1461122689162" expanded="true" signature="9584:9626" placeholder="SELECT userI... User" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/js/controllers.js">
+    <entry file="file://$PROJECT_DIR$/database_interaction.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5402985">
-          <caret line="290" column="46" selection-start-line="290" selection-start-column="46" selection-end-line="290" selection-end-column="46" />
+        <state vertical-scroll-proportion="0.36567163">
+          <caret line="346" column="27" selection-start-line="346" selection-start-column="27" selection-end-line="346" selection-end-column="27" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#307#316#0" expanded="true" />
+            <marker date="1461122698717" expanded="true" signature="785:851" placeholder="INSERT INTO Attractions... " />
+            <marker date="1461122698717" expanded="true" signature="785:857" placeholder="INSERT INTO Attractions... " />
+            <marker date="1461122698717" expanded="true" signature="785:863" placeholder="INSERT INTO Attractions... " />
+            <marker date="1461122698717" expanded="true" signature="785:910" placeholder="INSERT INTO Attractions... " />
+            <marker date="1461122698717" expanded="true" signature="1468:1517" placeholder="UPDATE Attra... " />
+            <marker date="1461122698717" expanded="true" signature="1640:1688" placeholder="UPDATE Attra... " />
+            <marker date="1461122698717" expanded="true" signature="1803:1847" placeholder="UPDATE Attra... " />
+            <marker date="1461122698717" expanded="true" signature="1978:2030" placeholder="UPDATE Attra... " />
+            <marker date="1461122698717" expanded="true" signature="2145:2189" placeholder="UPDATE Attra... " />
+            <marker date="1461122698717" expanded="true" signature="2304:2348" placeholder="UPDATE Attra... " />
+            <marker date="1461122698717" expanded="true" signature="2467:2513" placeholder="UPDATE Attra... " />
+            <marker date="1461122698717" expanded="true" signature="2802:2840" placeholder="DELETE FROM " />
+            <marker date="1461122698717" expanded="true" signature="3288:3378" placeholder="INSERT INTO Posts... " />
+            <marker date="1461122698717" expanded="true" signature="3986:4026" placeholder="UPDATE Posts... " />
+            <marker date="1461122698717" expanded="true" signature="4147:4188" placeholder="UPDATE Posts... " />
+            <marker date="1461122698717" expanded="true" signature="4313:4356" placeholder="UPDATE Posts... " />
+            <marker date="1461122698717" expanded="true" signature="4485:4530" placeholder="UPDATE Posts... " />
+            <marker date="1461122698717" expanded="true" signature="4649:4689" placeholder="UPDATE Posts... " />
+            <marker date="1461122698717" expanded="true" signature="4970:5008" placeholder="DELETE FROM " />
+            <marker date="1461122698717" expanded="true" signature="5040:5072" placeholder="DELETE FROM " />
+            <marker date="1461122698717" expanded="true" signature="5442:5661" placeholder="SELECT p.Upv... User" />
+            <marker date="1461122698717" expanded="true" signature="6108:6202" placeholder="INSERT INTO Users... " />
+            <marker date="1461122698717" expanded="true" signature="6633:6664" placeholder="DELETE FROM " />
+            <marker date="1461122698717" expanded="true" signature="6922:6962" placeholder="SELECT Passw... User" />
+            <marker date="1461122698717" expanded="true" signature="7941:8156" placeholder="SELECT p.Upv... Posts" />
+            <marker date="1461122698717" expanded="true" signature="8743:8976" placeholder="SELECT p.Upv... Posts" />
+            <marker date="1461122698717" expanded="true" signature="9519:9748" placeholder="SELECT p.Upv... Posts" />
+            <marker date="1461122698717" expanded="true" signature="10304:10551" placeholder="SELECT p.Upv... Posts" />
+            <marker date="1461122698717" expanded="true" signature="11100:11328" placeholder="SELECT p.Upv... Posts" />
+            <marker date="1461122698717" expanded="true" signature="11884:12132" placeholder="SELECT p.Upv... Posts" />
+            <marker date="1461122698717" expanded="true" signature="12692:12935" placeholder="SELECT p.Upv... Posts" />
+            <marker date="1461122698717" expanded="true" signature="13508:13770" placeholder="SELECT p.Upv... Posts" />
+            <marker date="1461122698717" expanded="true" signature="13591:13770" placeholder="SELECT p.Upv... Posts" />
+            <marker date="1461122698717" expanded="true" signature="14211:14236" placeholder="SELECT * FRO... Attractions" />
+            <marker date="1461122698717" expanded="true" signature="14334:14440" placeholder="SELECT * FRO... Post" />
+            <marker date="1461122698717" expanded="true" signature="14882:14907" placeholder="SELECT * FRO... Attractions" />
+            <marker date="1461122698717" expanded="true" signature="16458:16564" placeholder="SELECT * FRO... Post" />
+            <marker date="1461122698717" expanded="true" signature="16742:16848" placeholder="SELECT * FRO... Post" />
+            <marker date="1461122698717" expanded="true" signature="17026:17132" placeholder="SELECT * FRO... Post" />
+            <marker date="1461122698717" expanded="true" signature="17310:17416" placeholder="SELECT * FRO... Post" />
+            <marker date="1461122698717" expanded="true" signature="17882:17905" placeholder="PRAGMA table... " />
+            <marker date="1461122698717" expanded="true" signature="17983:18044" placeholder="SELECT * Fro... Tags" />
+            <marker date="1461122698717" expanded="true" signature="18160:18218" placeholder="INSERT INTO Tags... " />
+            <marker date="1461122698717" expanded="true" signature="18328:18379" placeholder="ALTER TABLE Tags... " />
+            <marker date="1461122698717" expanded="true" signature="18436:18503" placeholder="UPDATE Tags " />
+            <marker date="1461122698717" expanded="true" signature="18634:18701" placeholder="UPDATE Tags " />
+            <marker date="1461122698717" expanded="true" signature="18888:18906" placeholder="SELECT * FRO... Tags" />
           </folding>
         </state>
       </provider>

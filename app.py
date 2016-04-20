@@ -140,9 +140,12 @@ def search_place():
 def heat_map_data():
     print("Getting to heatmap")
     heat_json = request.get_json()
+    print("Hey")
     latitude = heat_json["Latitude"]
+    print("Hey")
     longitude = heat_json["Longitude"]
     # print("Latitude/Longitude:" +str(latitude), str(longitude))
+    print("Hey")
     result = heatmap()
     return json.dumps(result)
 

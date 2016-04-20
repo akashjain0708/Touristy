@@ -1,10 +1,10 @@
 <div class="large-12 sg">
     <div class="large-3 columns">
         Welcome {{userName}}!
-        &nbsp &nbsp <a href="#/mypost" class="button">My Posts</a>
+        &nbsp &nbsp <a href="#/mypost" ng-show="if_loggedIn" class="button">My Posts</a>
     </div>
     <div class="large-8 columns">
-        <a href="#/home" ng-click="SignOut()"> <i class="fa fa-sign-out" aria-hidden="true"> Sign Out </i> </a>
+        <a href="#/home" ng-show="if_loggedIn" ng-click="SignOut()"> <i class="fa fa-sign-out" aria-hidden="true"> Sign Out </i> </a>
     </div>
 </div>
 <div class="large-12 large-centered" id = "main">

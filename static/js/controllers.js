@@ -16,6 +16,9 @@ mc.controller('hc', ['$scope', '$http', '$location', function($scope, $http, $lo
 
 mc.controller('hmc', ['$scope', '$http', '$location', function($scope, $http, $location){
     $scope.userName = localStorage.getItem("UID");
+    if($scope.userName != null) {
+        $scope.if_loggedIn = true;
+    }
     var map, heatmap;
     //var tempLat = 37.774546;
     //var tempLong = -122.433523;
@@ -133,6 +136,9 @@ mc.controller('lc', ['$scope', '$http', '$location', function($scope, $http, $lo
     //userName = "Priya" ;//Have to remove this
     //$scope.userName = userName;
     $scope.userName = localStorage.getItem("UID");
+        if($scope.userName != null) {
+        $scope.if_loggedIn = true;
+    }
 
     function getPlaceData(){
         var location = autocomplete.getPlace().geometry.location;
@@ -179,6 +185,9 @@ mc.controller('mainc', ['$scope', '$http', '$routeParams', '$location', function
     //userName = "Priya"   //Have to remove this
     //$scope.userName = userName;
     $scope.userName = localStorage.getItem("UID");
+        if($scope.userName != null) {
+        $scope.if_loggedIn = true;
+    }
     var location = "";
     var latitude = "";
     var longitude = "";
@@ -380,9 +389,10 @@ mc.controller('updatec', ['$scope', '$http', '$routeParams', '$location', functi
                 // $scope.update = data;
                 console.log("Returns from update post");
                 $location.path('/mypost');
-
             })
             .error(function (data, status, header, config) {
+                console.log("Returns from update post in error");
+                $location.path('/mypost');
                 $scope.ResponseDetails = "Data: " + data +
                     "<hr />status: " + status +
                     "<hr />headers: " + header;

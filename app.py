@@ -142,8 +142,8 @@ def heat_map_data():
     heat_json = request.get_json()
     latitude = heat_json["Latitude"]
     longitude = heat_json["Longitude"]
-    print("Latitude/Longitude:" +str(latitude), str(longitude))
-    result = heatmap(latitude, longitude)
+    # print("Latitude/Longitude:" +str(latitude), str(longitude))
+    result = heatmap()
     return json.dumps(result)
 
 

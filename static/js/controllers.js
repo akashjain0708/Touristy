@@ -220,6 +220,7 @@ mc.controller('mainc', ['$scope', '$http', '$routeParams', '$location', function
             Latitude : lat,
             Longitude : long
         };
+        console.log("Lat/Lon: "+lat+","+long);
         $http.post('/heatMapData', data).success(function(data){
             console.log("Returned with: " +JSON.stringify(data));
             var heat_data = [];
@@ -287,7 +288,7 @@ mc.controller('mainc', ['$scope', '$http', '$routeParams', '$location', function
             Rating : $scope.attraction.rating,
             Tags: tags
         };
-
+        console.log("Lat/Lon: "+lat+","+long);
         $http.post('/search/filters', data)
             .success(function (data, status, headers, config) {
                 $scope.locations = data;

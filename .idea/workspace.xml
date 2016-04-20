@@ -45,11 +45,11 @@
       <file leaf-file-name="app.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5">
-              <caret line="77" column="70" selection-start-line="77" selection-start-column="70" selection-end-line="77" selection-end-column="70" />
+            <state vertical-scroll-proportion="0.49253732">
+              <caret line="77" column="54" selection-start-line="77" selection-start-column="54" selection-end-line="77" selection-end-column="54" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
-                <marker date="1461116664089" expanded="true" signature="9597:9639" placeholder="SELECT userI... User" />
+                <marker date="1461116817540" expanded="true" signature="9652:9694" placeholder="SELECT userI... User" />
               </folding>
             </state>
           </provider>
@@ -59,7 +59,7 @@
         <entry file="file://$PROJECT_DIR$/database_interaction.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="220" column="4" selection-start-line="220" selection-start-column="4" selection-end-line="220" selection-end-column="4" />
+              <caret line="218" column="87" selection-start-line="218" selection-start-column="87" selection-end-line="218" selection-end-column="87" />
               <folding>
                 <element signature="e#307#316#0" expanded="true" />
                 <marker date="1461115116103" expanded="true" signature="785:851" placeholder="INSERT INTO Attractions... " />
@@ -217,9 +217,10 @@
     <detection-done>true</detection-done>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="width" value="816" />
-    <option name="height" value="858" />
+    <option name="x" value="-9" />
+    <option name="y" value="-9" />
+    <option name="width" value="1618" />
+    <option name="height" value="868" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -671,10 +672,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="0" width="816" height="858" extended-state="0" />
+    <frame x="-9" y="-9" width="1618" height="868" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4032258" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19404916" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43209878" sideWeight="0.20833333" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -766,7 +767,7 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
-            <marker date="1461116664089" expanded="true" signature="9597:9639" placeholder="SELECT userI... User" />
+            <marker date="1461116817540" expanded="true" signature="9652:9694" placeholder="SELECT userI... User" />
           </folding>
         </state>
       </provider>
@@ -903,7 +904,7 @@
           <caret line="116" column="21" selection-start-line="116" selection-start-column="21" selection-end-line="116" selection-end-column="21" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
-            <marker date="1461116664089" expanded="true" signature="9597:9639" placeholder="SELECT userI... User" />
+            <marker date="1461116817540" expanded="true" signature="9652:9694" placeholder="SELECT userI... User" />
           </folding>
         </state>
       </provider>
@@ -1011,7 +1012,7 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
-            <marker date="1461116664089" expanded="true" signature="9597:9639" placeholder="SELECT userI... User" />
+            <marker date="1461116817540" expanded="true" signature="9652:9694" placeholder="SELECT userI... User" />
           </folding>
         </state>
       </provider>
@@ -1268,7 +1269,7 @@
     <entry file="file://$PROJECT_DIR$/database_interaction.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="220" column="4" selection-start-line="220" selection-start-column="4" selection-end-line="220" selection-end-column="4" />
+          <caret line="218" column="87" selection-start-line="218" selection-start-column="87" selection-end-line="218" selection-end-column="87" />
           <folding>
             <element signature="e#307#316#0" expanded="true" />
             <marker date="1461115116103" expanded="true" signature="785:851" placeholder="INSERT INTO Attractions... " />
@@ -1322,11 +1323,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5">
-          <caret line="77" column="70" selection-start-line="77" selection-start-column="70" selection-end-line="77" selection-end-column="70" />
+        <state vertical-scroll-proportion="0.49253732">
+          <caret line="77" column="54" selection-start-line="77" selection-start-column="54" selection-end-line="77" selection-end-column="54" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
-            <marker date="1461116664089" expanded="true" signature="9597:9639" placeholder="SELECT userI... User" />
+            <marker date="1461116817540" expanded="true" signature="9652:9694" placeholder="SELECT userI... User" />
           </folding>
         </state>
       </provider>

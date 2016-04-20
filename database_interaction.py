@@ -473,7 +473,7 @@ def get_tag_columns():
     others = []
 
     for entry in arr:
-        tuple1 = (entry[0], entry[1])
+        tuple1 = (str(entry[0]), str(entry[1]))
         latlong.append(tuple1)
 
         tuple2 = entry[2:]

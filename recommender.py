@@ -41,16 +41,12 @@ def new_click_recommendation(location):
     print(str(location_table[len(location_table) - 1]))
     # print("Type:" + type(location_table[len(location_table) - 1]))
 
-    for entry in location_table:
-        if entry[0] == str(location[0]):
-            print("HELL YEAH!")
-
-    if (location[0], location[1]) in location_table:
+    if (str(location[0]), str(location[1])) in location_table:
         print("YES, IT DOES!")
     else:
         print("NOPE!")
     # print("Type in database: " +type(location_table[0][0]))
-    item_position = location_table.index((location[0], location[1]))
+    item_position = location_table.index((str(location[0]), str(location[1])))
     print("Hey")
     print("Item position:" + str(item_position))
     print("Hey")

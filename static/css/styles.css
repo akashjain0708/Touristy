@@ -4200,8 +4200,12 @@ body a:hover {
     border-radius: 15px; }
 /* line 43, ../../source_sass/_base.scss */
 #home .button {
-    margin-top: 6px; }
+    margin-top: 3px; }
 /* line 47, ../../source_sass/_base.scss */
+#home .g {
+    color: red;
+    font-size: 0.7em}
+
 #home .ls {
     font-size: 1.5em;
     padding-bottom: 20px;
@@ -4210,7 +4214,7 @@ body a:hover {
 /* line 55, ../../source_sass/_base.scss */
 #home .ls div a {
     z-index: 500;
-    margin-top: 10%;
+    margin-top: 7%;
     margin-left: 15px;
     margin-right: 15px; }
 

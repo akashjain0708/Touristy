@@ -465,17 +465,21 @@ def get_tag_columns():
     cur.execute("SELECT * FROM Tags")
     arr = cur.fetchall()
 
+    latlong_string = []
     latlong = []
     others = []
 
     for entry in arr:
         tuple1 = (str(entry[0]), str(entry[1]))
-        latlong.append(tuple1)
+        latlong_string.append(tuple1)
 
         tuple2 = entry[2:]
         others.append(tuple2)
 
-    return [latlong, others]
+        tuple3 = (entry[0], entry[1])
+        latlong.append(tuple3)
+
+    return [latlong_string, others, latlong]
 
 
 if __name__ == '__main__':

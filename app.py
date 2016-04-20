@@ -76,6 +76,7 @@ def get_posts_for_locations(recommend_location_list):
     for location in recommend_location_list:
         posts = select_lat_long(location[0], location[1])
         if len(posts) is 0:
+            print("Length of posts is 0")
             continue
         recommended_post = posts[0]
         item_json = {"LocationName": recommended_post[4],

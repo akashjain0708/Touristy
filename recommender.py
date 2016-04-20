@@ -58,7 +58,8 @@ def new_click_recommendation(location):
     recommended_attractions = []
     print("Doing index calculations")
     for index in indices:
-        if location_table[index][0] != location[0] and location_table[index][1] != location[1]:
+        if str(location_table[index][0]) != str(location[0]) and str(location_table[index][1]) != str(location[1]):
             recommended_attractions.append(location_table[index])
         print("Returning index calculations")
+    print("Printing recommended attractionn list: " +str(recommended_attractions))
     return recommended_attractions

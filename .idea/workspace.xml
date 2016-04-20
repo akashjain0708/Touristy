@@ -45,11 +45,11 @@
       <file leaf-file-name="app.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.46666667">
-              <caret line="76" column="32" selection-start-line="76" selection-start-column="32" selection-end-line="76" selection-end-column="32" />
+            <state vertical-scroll-proportion="0.5">
+              <caret line="77" column="70" selection-start-line="77" selection-start-column="70" selection-end-line="77" selection-end-column="70" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
-                <marker date="1461116588553" expanded="true" signature="9583:9625" placeholder="SELECT userI... User" />
+                <marker date="1461116664089" expanded="true" signature="9597:9639" placeholder="SELECT userI... User" />
               </folding>
             </state>
           </provider>
@@ -766,7 +766,7 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
-            <marker date="1461116588553" expanded="true" signature="9583:9625" placeholder="SELECT userI... User" />
+            <marker date="1461116664089" expanded="true" signature="9597:9639" placeholder="SELECT userI... User" />
           </folding>
         </state>
       </provider>
@@ -903,7 +903,7 @@
           <caret line="116" column="21" selection-start-line="116" selection-start-column="21" selection-end-line="116" selection-end-column="21" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
-            <marker date="1461116588553" expanded="true" signature="9583:9625" placeholder="SELECT userI... User" />
+            <marker date="1461116664089" expanded="true" signature="9597:9639" placeholder="SELECT userI... User" />
           </folding>
         </state>
       </provider>
@@ -1011,7 +1011,7 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
-            <marker date="1461116588553" expanded="true" signature="9583:9625" placeholder="SELECT userI... User" />
+            <marker date="1461116664089" expanded="true" signature="9597:9639" placeholder="SELECT userI... User" />
           </folding>
         </state>
       </provider>
@@ -1322,11 +1322,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.46666667">
-          <caret line="76" column="32" selection-start-line="76" selection-start-column="32" selection-end-line="76" selection-end-column="32" />
+        <state vertical-scroll-proportion="0.5">
+          <caret line="77" column="70" selection-start-line="77" selection-start-column="70" selection-end-line="77" selection-end-column="70" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
-            <marker date="1461116588553" expanded="true" signature="9583:9625" placeholder="SELECT userI... User" />
+            <marker date="1461116664089" expanded="true" signature="9597:9639" placeholder="SELECT userI... User" />
           </folding>
         </state>
       </provider>

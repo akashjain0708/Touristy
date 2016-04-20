@@ -74,7 +74,7 @@ def get_posts_for_locations(recommend_location_list):
     print("Making recommend list")
     # For every location, take the top most post, and create a list
     for location in recommend_location_list:
-        posts = select_lat_long(location[0], location[1])
+        posts = select_lat_long(float(location[0]), float(location[1]))
         if len(posts) is 0:
             print("Length of posts is 0")
             continue

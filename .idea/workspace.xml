@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="13462c01-1851-4913-847d-860e7d849230" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.py" afterPath="$PROJECT_DIR$/app.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/recommender.py" afterPath="$PROJECT_DIR$/recommender.py" />
     </list>
     <ignored path="Touristy.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -46,11 +45,11 @@
       <file leaf-file-name="app.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.24848485">
-              <caret line="76" column="23" selection-start-line="76" selection-start-column="23" selection-end-line="76" selection-end-column="23" />
+            <state vertical-scroll-proportion="0.46666667">
+              <caret line="76" column="70" selection-start-line="76" selection-start-column="70" selection-end-line="76" selection-end-column="70" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
-                <marker date="1461116122276" expanded="true" signature="9550:9592" placeholder="SELECT userI... User" />
+                <marker date="1461116455834" expanded="true" signature="9564:9606" placeholder="SELECT userI... User" />
               </folding>
             </state>
           </provider>
@@ -126,8 +125,8 @@
       <file leaf-file-name="recommender.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/recommender.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.8333334">
-              <caret line="22" column="18" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
+            <state vertical-scroll-proportion="-14.944445">
+              <caret line="61" column="43" selection-start-line="61" selection-start-column="43" selection-end-line="61" selection-end-column="43" />
               <folding />
             </state>
           </provider>
@@ -767,7 +766,7 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
-            <marker date="1461116122276" expanded="true" signature="9550:9592" placeholder="SELECT userI... User" />
+            <marker date="1461116455834" expanded="true" signature="9564:9606" placeholder="SELECT userI... User" />
           </folding>
         </state>
       </provider>
@@ -904,7 +903,7 @@
           <caret line="116" column="21" selection-start-line="116" selection-start-column="21" selection-end-line="116" selection-end-column="21" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
-            <marker date="1461116122276" expanded="true" signature="9550:9592" placeholder="SELECT userI... User" />
+            <marker date="1461116455834" expanded="true" signature="9564:9606" placeholder="SELECT userI... User" />
           </folding>
         </state>
       </provider>
@@ -1012,7 +1011,7 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
-            <marker date="1461116122276" expanded="true" signature="9550:9592" placeholder="SELECT userI... User" />
+            <marker date="1461116455834" expanded="true" signature="9564:9606" placeholder="SELECT userI... User" />
           </folding>
         </state>
       </provider>
@@ -1258,14 +1257,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/recommender.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.8333334">
-          <caret line="22" column="18" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/database_interaction.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1321,13 +1312,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/recommender.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-14.944445">
+          <caret line="61" column="43" selection-start-line="61" selection-start-column="43" selection-end-line="61" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.24848485">
-          <caret line="76" column="23" selection-start-line="76" selection-start-column="23" selection-end-line="76" selection-end-column="23" />
+        <state vertical-scroll-proportion="0.46666667">
+          <caret line="76" column="70" selection-start-line="76" selection-start-column="70" selection-end-line="76" selection-end-column="70" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
-            <marker date="1461116122276" expanded="true" signature="9550:9592" placeholder="SELECT userI... User" />
+            <marker date="1461116455834" expanded="true" signature="9564:9606" placeholder="SELECT userI... User" />
           </folding>
         </state>
       </provider>

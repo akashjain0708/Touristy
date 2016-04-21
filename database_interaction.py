@@ -352,7 +352,6 @@ def heatmap():
     lat_lon_row = [(str(temp_row[1]), str(temp_row[2])) for temp_row in rows]
     data = []
     for row in rows:
-        print(rows)
         print(row[1], row[2])
         # cur.execute(
         #     "SELECT * FROM Attractions a WHERE a.Latitude='{}' AND a.Longitude='{}'".format(

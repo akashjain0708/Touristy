@@ -352,12 +352,12 @@ def heatmap():
     data = []
     for row in rows:
         cur.execute(
-            "SELECT * FROM Posts p INNER JOIN Attractions a ON p.postID=a.postID WHERE Latitude='{}' AND Longitude='{}'".format(
+            "SELECT * FROM Attractions a WHERE a.Latitude='{}' AND a.Longitude='{}'".format(
                 row[1], row[2]))
         posts = cur.fetchall()
         lenposts = len(posts)
         sample_entry = (row[1], row[2], lenposts)
-        if (sample_entry not in data):
+        if sample_entry not in data:
             data.append((row[1], row[2], lenposts))
     for entry in data:
         print(entry)

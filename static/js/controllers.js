@@ -218,9 +218,6 @@ mc.controller('mainc', ['$scope', '$http', '$routeParams', '$location', function
 
         $http.post('/search', data)
             .success(function (data, status, headers, config) {
-                $scope.attraction.tym = null;
-                $scope.attraction.price = null;
-                $scope.attraction.rating = null;
                 console.log("Did a post!" + JSON.stringify(data));
                 $scope.locations = data[0];
                 console.log(JSON.stringify(data[1]));

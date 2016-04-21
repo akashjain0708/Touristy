@@ -4400,6 +4400,14 @@ body a:hover {
 #main .total .location .locationcontent .fa-pencil {
     height: 10px;
     width: 6px; }
+
+#main .total .location .locationcontent .fa-thumbs-o-up {
+    cursor:pointer;
+}
+#main .total .location .locationcontent .fa-thumbs-o-down {
+    cursor:pointer;
+}
+
 /* line 268, ../../source_sass/_base.scss */
 #main .total .location .locationcontent .fa-pencil:hover {
     height: 10px;

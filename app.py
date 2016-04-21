@@ -87,7 +87,9 @@ def get_posts_for_locations(recommend_location_list):
                      "Description": recommended_post[2],
                      "UpVotes": recommended_post[0],
                      "DownVotes": recommended_post[1],
-                     "PostID": recommended_post[8]
+                     "PostID": recommended_post[8],
+                     "Latitude": location[0],
+                     "Longitude": location[1]
                      }
         recommend_list.append(item_json)
     print("Sending list")

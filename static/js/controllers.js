@@ -35,7 +35,9 @@ mc.controller('hmc', ['$scope', '$http', '$location', function($scope, $http, $l
     });
 
     heatmap.setMap(map);
-
+    $scope.back = function(){
+        window.history.back();
+    };
     //}
 }]);
 
@@ -122,6 +124,10 @@ mc.controller('mpc', ['$scope', '$http', '$location', function($scope, $http, $l
 
     $scope.SignOut = function(){
         localStorage.removeItem("UID");
+    };
+
+    $scope.back = function(){
+        window.history.back();
     };
 
 }]);
@@ -314,6 +320,7 @@ mc.controller('mainc', ['$scope', '$http', '$routeParams', '$location', function
     $scope.SignOut = function(){
         localStorage.removeItem("UID");
     };
+
 
     var voted = new Array();
 

@@ -47,13 +47,13 @@ mc.controller('loginc', ['$scope', '$http', '$location', function($scope, $http,
             UserName : $scope.user.username,
             Password : $scope.user.password
         };
-        localStorage.setItem("UID", $scope.user.username);
 
         $http.post('/loginUser', data)
             .success(function (data, status, headers, config) {
                 if(data[0] == "OK") {
                     console.log("User logged in!" +data);
                     userName = data[2];
+                    localStorage.setItem("UID", data[2]);
                     $location.path('/list');
                 }
                 else{

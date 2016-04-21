@@ -24,7 +24,7 @@ mc.controller('hmc', ['$scope', '$http', '$location', function($scope, $http, $l
     //var tempLong = -122.433523;
     //function initMap() {
     map = new google.maps.Map(document.getElementById('map'), {
-        zoom: 13,
+        zoom: 15,
         center: {lat: tempLat, lng: tempLong},
         mapTypeId: google.maps.MapTypeId.SATELLITE
     });

@@ -31,7 +31,9 @@ mc.controller('hmc', ['$scope', '$http', '$location', function($scope, $http, $l
 
     heatmap = new google.maps.visualization.HeatmapLayer({
         data: heatdata,
-        map: map
+        map: map,
+        radius: 30,
+        opacity:1.5
     });
 
     heatmap.setMap(map);
@@ -241,7 +243,7 @@ mc.controller('mainc', ['$scope', '$http', '$routeParams', '$location', function
             var heat_data = [];
             for (entry in data){
                 console.log(JSON.stringify(data[entry]));
-                var each_heat = {"location": new google.maps.LatLng(data[entry][0], data[entry][1]), weight: data[entry][2]};
+                var each_heat = {location: new google.maps.LatLng(data[entry][0], data[entry][1]), weight: parseInt(data[entry][2])};
                 heat_data.push(each_heat);
             }
             //print("Heat data:" +JSON.stringify(heat_data));

@@ -349,6 +349,7 @@ def heatmap():
     cur = connection.cursor()
     cur.execute("SELECT * FROM Attractions")
     rows = cur.fetchall()
+    lat_lon_row = [(str(temp_row[1]), str(temp_row[2])) for temp_row in rows]
     data = []
     for row in rows:
         print(rows)
@@ -356,11 +357,11 @@ def heatmap():
         # cur.execute(
         #     "SELECT * FROM Attractions a WHERE a.Latitude='{}' AND a.Longitude='{}'".format(
         #         row[1], row[2]))
-
-        posts = cur.fetchall()
-        print(str(posts))
-        print(len(posts))
-        lenposts = len(posts)
+        #
+        # posts = cur.fetchall()
+        # print(str(posts))
+        print(lat_lon_row.count((str(row[1]), str(row[2]))))
+        lenposts = lat_lon_row.count((str(row[1]), str(row[2])))
         sample_entry = (row[1], row[2], lenposts)
         if sample_entry not in data:
             data.append((row[1], row[2], lenposts))

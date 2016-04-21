@@ -351,10 +351,13 @@ def heatmap():
     rows = cur.fetchall()
     data = []
     for row in rows:
+        print(row[1], row[2])
         cur.execute(
             "SELECT * FROM Attractions a WHERE a.Latitude='{}' AND a.Longitude='{}'".format(
                 row[1], row[2]))
         posts = cur.fetchall()
+        print(str(posts))
+        print(len(posts))
         lenposts = len(posts)
         sample_entry = (row[1], row[2], lenposts)
         if sample_entry not in data:
